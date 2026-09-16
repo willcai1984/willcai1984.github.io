@@ -4,577 +4,869 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<meta name="description" content="蔡伟 · 测试高级经理 / 测试专家 个人简介（公开脱敏版）：质量工程、测试自动化与 AI 质量实践。">
-<title>蔡伟 · 个人简介（公开脱敏版）</title>
+<meta name="description" content="蔡伟 · 测试高级经理 / 测试专家 个人简历（公开脱敏版）：质量工程、持续测试平台、质量治理与 AI 质量实践的工程评审卷宗。">
+<title>蔡伟 · 个人简历（公开脱敏版）</title>
 <style>
   :root {
-    --bg: #0a0f1e;
-    --bg-soft: #0d1426;
-    --surface: #111a30;
-    --surface-2: #15203a;
-    --border: rgba(148, 163, 184, 0.16);
-    --border-strong: rgba(148, 163, 184, 0.28);
-    --text: #e7edfb;
-    --muted: #9aa8c7;
-    --faint: #6b7a9c;
-    --accent: #5eead4;
-    --accent-2: #60a5fa;
-    --amber: #fbbf24;
-    --grad: linear-gradient(96deg, #5eead4 0%, #60a5fa 100%);
+    --paper: #f3efe4;
+    --paper-2: #ede8d8;
+    --ink: #211d15;
+    --muted: #5f5946;
+    --hairline: #d8d0ba;
+    --hairline-2: #b0a68a;
+    --blue: #1d5aa0;
+    --blue-deep: #123f74;
+    --red: #b03a2a;
+    --grid: rgba(29, 60, 100, 0.045);
+    --hl: rgba(29, 90, 160, 0.16);
+    --serif: "Songti SC", "STSong", "Noto Serif CJK SC", "Source Han Serif SC", "SimSun", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+    --mono: ui-monospace, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
   body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
-    line-height: 1.75;
+    background-color: var(--paper);
+    background-image:
+      linear-gradient(var(--grid) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+    background-size: 28px 28px;
+    color: var(--ink);
+    font-family: var(--sans);
     font-size: 16px;
+    line-height: 1.85;
+    overflow-wrap: break-word;
     -webkit-font-smoothing: antialiased;
   }
-  ::selection { background: rgba(94, 234, 212, 0.28); }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  :focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; border-radius: 4px; }
+  ::selection { background: rgba(29, 90, 160, 0.22); }
+  a { color: var(--blue-deep); text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:hover { color: var(--blue); }
+  :focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+  .mono { font-family: var(--mono); }
   .skip {
-    position: absolute; left: -9999px; top: 0; background: var(--surface-2);
-    padding: 8px 14px; border-radius: 8px; z-index: 99;
+    position: absolute; left: -9999px; top: 0; z-index: 99;
+    background: var(--paper); border: 2px solid var(--ink);
+    padding: 10px 16px; font-weight: 600;
   }
   .skip:focus { left: 12px; top: 12px; }
+
+  /* anchor targets: keep headings clear of the sticky topbar after jumps
+     (topbar ~63px desktop; wraps to ~154px on narrow screens) */
+  #main, #career, #impact, #cases, #tech, #leverage, #capability, #notice,
+  #case-a, #case-b, #case-c { scroll-margin-top: 4.75rem; }
+  @media (max-width: 760px) {
+    #main, #career, #impact, #cases, #tech, #leverage, #capability, #notice,
+    #case-a, #case-b, #case-c { scroll-margin-top: 10.5rem; }
+  }
 
   /* ---------- top nav ---------- */
   .topbar {
     position: sticky; top: 0; z-index: 50;
-    background: rgba(10, 15, 30, 0.82);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--border);
+    background: var(--paper);
+    border-bottom: 1px solid var(--hairline-2);
   }
   .topbar-inner {
-    max-width: 1080px; margin: 0 auto; padding: 12px 24px;
-    display: flex; align-items: center; gap: 20px;
+    max-width: 68rem; margin: 0 auto; padding: 6px 1.5rem;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 2px 18px;
   }
-  .brand { font-weight: 700; letter-spacing: 0.02em; white-space: nowrap; }
-  .brand small { color: var(--faint); font-weight: 500; margin-left: 8px; }
-  nav.links { margin-left: auto; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
-  nav.links::-webkit-scrollbar { display: none; }
-  nav.links a {
-    color: var(--muted); font-size: 14px; padding: 6px 12px; border-radius: 999px;
-    white-space: nowrap;
+  .brand {
+    font-weight: 700; text-decoration: none; color: var(--ink);
+    display: inline-flex; align-items: baseline; gap: 8px;
+    padding: 10px 0;
   }
-  nav.links a:hover { color: var(--text); background: var(--surface); text-decoration: none; }
+  .brand .brand-sub { font-family: var(--mono); font-weight: 400; font-size: 0.72rem; letter-spacing: 0.12em; color: var(--muted); }
+  .nav-list { list-style: none; display: flex; flex-wrap: wrap; margin-left: auto; }
+  .nav-list a {
+    display: block; padding: 10px 12px;
+    font-size: 0.9rem; color: var(--muted); text-decoration: none;
+  }
+  .nav-list a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
 
   /* ---------- hero ---------- */
-  .hero {
-    position: relative; overflow: hidden;
-    background:
-      radial-gradient(720px 340px at 82% -10%, rgba(96, 165, 250, 0.16), transparent 60%),
-      radial-gradient(560px 300px at 12% 110%, rgba(94, 234, 212, 0.10), transparent 60%),
-      var(--bg);
-    border-bottom: 1px solid var(--border);
+  .hero { border-bottom: 2px solid var(--ink); background: linear-gradient(180deg, var(--paper) 0%, var(--paper-2) 100%); }
+  .hero-grid {
+    max-width: 68rem; margin: 0 auto; padding: 4.2rem 1.5rem 3.4rem;
+    display: grid; grid-template-columns: minmax(0, 1fr) 15rem; gap: 2.5rem;
   }
-  .hero-inner { max-width: 1080px; margin: 0 auto; padding: 84px 24px 72px; }
-  .kicker {
-    font-size: 13px; letter-spacing: 0.22em; color: var(--accent);
-    text-transform: uppercase; margin-bottom: 18px;
+  .kicker { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.28em; color: var(--blue); margin-bottom: 1.2rem; }
+  .hero h1 { font-family: var(--serif); font-size: clamp(2.8rem, 7vw, 4.2rem); line-height: 1.12; letter-spacing: 0.04em; }
+  .hero-role { margin-top: 0.7rem; font-size: clamp(1.1rem, 2.6vw, 1.4rem); font-weight: 600; font-family: var(--serif); }
+  .hero-meta { margin-top: 0.4rem; font-family: var(--mono); font-size: 0.8rem; letter-spacing: 0.06em; color: var(--muted); }
+  .thesis { margin-top: 1.4rem; max-width: 34em; font-size: 1.06rem; border-left: 3px solid var(--blue); padding-left: 1rem; }
+  .hero-results { list-style: none; margin-top: 1.6rem; max-width: 38em; }
+  .hero-results li {
+    display: grid; grid-template-columns: 2.6rem minmax(0, 1fr); gap: 0.8rem;
+    padding: 0.55rem 0; border-top: 1px solid var(--hairline);
+    font-size: 0.95rem;
   }
-  .hero h1 {
-    font-size: clamp(40px, 7vw, 60px); line-height: 1.15; letter-spacing: 0.02em;
+  .hero-results .idx { font-family: var(--mono); font-size: 0.78rem; color: var(--blue); padding-top: 0.3rem; }
+  .mask {
+    font-family: var(--mono); font-weight: 600; font-style: normal;
+    background: linear-gradient(transparent 62%, var(--hl) 62%);
+    padding: 0 0.1em;
   }
-  .hero .role {
-    margin-top: 14px; font-size: clamp(18px, 3vw, 24px); font-weight: 600;
-    background: var(--grad);
-    -webkit-background-clip: text; background-clip: text; color: transparent;
-    width: fit-content;
+  .fine { color: var(--muted); font-size: 0.85em; }
+  .hero-cta { margin-top: 1.6rem; font-size: 0.95rem; }
+  .hero-cta a { margin-right: 1.4rem; font-weight: 600; }
+  .hero-side { display: flex; flex-direction: column; align-items: flex-start; gap: 1.4rem; padding-top: 0.6rem; }
+  .stamp {
+    display: inline-block; font-family: var(--mono); text-align: center;
+    border: 2px solid var(--red); color: var(--red); border-radius: 2px;
+    padding: 0.55em 1.1em; letter-spacing: 0.3em; line-height: 1.7;
+    font-size: 0.82rem; transform: rotate(-3deg); opacity: 0.9;
   }
-  .hero .tagline { margin-top: 16px; color: var(--muted); font-size: 17px; max-width: 46em; }
-  .hero-tags { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px; }
-  .chip {
-    font-size: 13.5px; color: var(--muted);
-    border: 1px solid var(--border-strong); border-radius: 999px;
-    padding: 6px 14px; background: rgba(17, 26, 48, 0.6);
-  }
-  .chip b { color: var(--text); font-weight: 600; }
-  .badge {
-    display: inline-flex; align-items: center; gap: 8px;
-    margin-top: 30px; padding: 9px 16px; border-radius: 10px;
-    border: 1px solid rgba(251, 191, 36, 0.35);
-    background: rgba(251, 191, 36, 0.08);
-    color: var(--amber); font-size: 14px;
-  }
-  .badge a { color: var(--amber); text-decoration: underline; text-underline-offset: 3px; }
+  .stamp small { display: block; font-size: 0.66rem; letter-spacing: 0.22em; }
+  .hero-note { font-size: 0.82rem; color: var(--muted); border-top: 1px solid var(--hairline-2); padding-top: 0.9rem; }
 
-  /* ---------- layout ---------- */
-  main { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
-  section { padding: 64px 0 8px; }
-  .sec-kicker {
-    font-size: 12.5px; letter-spacing: 0.2em; color: var(--accent);
-    text-transform: uppercase; margin-bottom: 10px;
+  /* ---------- chapters ---------- */
+  .chapter { max-width: 68rem; margin: 0 auto; padding: 4rem 1.5rem 0.5rem; }
+  .ch-head {
+    display: grid; grid-template-columns: 8.5rem minmax(0, 1fr); gap: 0.4rem 2.2rem;
+    border-top: 2px solid var(--ink); padding-top: 1.1rem; position: relative;
   }
-  h2 { font-size: clamp(24px, 3.6vw, 32px); line-height: 1.3; letter-spacing: 0.01em; }
-  .sec-lead { color: var(--muted); margin-top: 12px; max-width: 52em; }
-  .divider { border: 0; border-top: 1px solid var(--border); margin: 56px 0 0; }
+  .ch-head::before { content: ""; position: absolute; top: 4px; left: 0; right: 0; border-top: 1px solid var(--ink); }
+  .ch-gutter { grid-column: 1; }
+  .ch-no {
+    display: block; font-family: var(--mono); font-weight: 700;
+    font-size: 3.4rem; line-height: 1; color: var(--hairline);
+    -webkit-text-stroke: 1px var(--hairline-2);
+  }
+  .ch-note { display: block; margin-top: 0.7rem; font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.14em; color: var(--muted); }
+  .ch-titling { grid-column: 2; }
+  .ch-kicker { font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.22em; color: var(--blue); margin-bottom: 0.5rem; }
+  h2 { font-family: var(--serif); font-size: clamp(1.5rem, 3.4vw, 1.95rem); line-height: 1.35; letter-spacing: 0.02em; }
+  .ch-lead { margin-top: 0.8rem; color: var(--muted); max-width: 44em; }
+  .ch-body { max-width: 52rem; margin-top: 1.6rem; }
+  .ch-body h3 { font-family: var(--serif); font-size: 1.22rem; line-height: 1.5; }
+  .divider { border: 0; border-top: 1px solid var(--hairline); margin: 3.2rem auto 0; max-width: 68rem; }
+  .vis-title { font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.18em; color: var(--muted); margin: 2rem 0 0.6rem; }
+  .vis-cap { font-size: 0.8rem; color: var(--muted); margin-top: 0.5rem; }
 
-  .grid { display: grid; gap: 18px; margin-top: 30px; }
-  .grid-2 { grid-template-columns: repeat(2, 1fr); }
-  .grid-3 { grid-template-columns: repeat(3, 1fr); }
-  .card {
-    background: linear-gradient(180deg, var(--surface) 0%, var(--bg-soft) 100%);
-    border: 1px solid var(--border); border-radius: 14px; padding: 22px 22px 20px;
-    transition: transform 0.18s ease, border-color 0.18s ease;
+  /* ---------- evolution ladder ---------- */
+  .evolution { list-style: none; margin-top: 1rem; border-left: 2px solid var(--hairline-2); }
+  .evolution li { position: relative; padding: 0.7rem 0 0.7rem 1.6rem; }
+  .evolution li + li { border-top: 1px dashed var(--hairline); }
+  .evolution li::before {
+    content: ""; position: absolute; left: -7px; top: 1.35rem;
+    width: 10px; height: 10px; background: var(--paper);
+    border: 2px solid var(--blue);
   }
-  .card:hover { transform: translateY(-2px); border-color: var(--border-strong); }
-  .card h3 { font-size: 17px; margin-bottom: 10px; }
-  .card h3 .no {
-    display: inline-block; font-size: 12px; color: var(--accent); letter-spacing: 0.14em;
-    margin-right: 8px; vertical-align: 2px;
+  .evolution .e-no { display: block; font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.2em; color: var(--blue); }
+  .evolution b { font-weight: 600; margin-right: 0.6em; }
+  .evolution span.ev-desc { color: var(--muted); font-size: 0.92rem; }
+
+  /* ---------- timeline ---------- */
+  .timeline { list-style: none; margin-top: 1rem; }
+  .timeline li { display: grid; grid-template-columns: 11rem minmax(0, 1fr); gap: 1.2rem; padding: 0.75rem 0; border-top: 1px solid var(--hairline); }
+  .t-range { font-family: var(--mono); font-size: 0.78rem; color: var(--muted); padding-top: 0.3rem; }
+  .timeline b { font-weight: 600; }
+  .timeline .t-role { color: var(--blue-deep); font-size: 0.88rem; margin-left: 0.6em; }
+  .timeline p { color: var(--muted); font-size: 0.92rem; }
+
+  /* ---------- tables ---------- */
+  .data-table { width: 100%; border-collapse: collapse; margin-top: 0.4rem; }
+  .data-table th, .data-table td {
+    border-bottom: 1px solid var(--hairline);
+    padding: 0.6rem 0.7rem 0.6rem 0;
+    text-align: left; vertical-align: top; font-size: 0.92rem;
   }
-  .card p { color: var(--muted); font-size: 14.5px; }
-  .card ul { list-style: none; margin-top: 8px; }
-  .card li {
-    color: var(--muted); font-size: 14.5px; padding: 5px 0 5px 18px; position: relative;
+  .data-table thead th {
+    font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.12em;
+    color: var(--muted); border-bottom: 2px solid var(--ink); font-weight: 600;
   }
-  .card li::before {
-    content: ""; position: absolute; left: 2px; top: 14px;
-    width: 6px; height: 6px; border-radius: 50%;
-    background: var(--accent); opacity: 0.8;
+  .data-table tbody th[scope="row"] { font-weight: 600; font-size: 0.94rem; }
+  .data-table td .dir { font-family: var(--mono); font-weight: 600; color: var(--blue); white-space: nowrap; }
+  .data-table td .val { font-family: var(--mono); font-weight: 600; white-space: nowrap; }
+
+  /* ---------- bars ---------- */
+  .barset { border: 1px solid var(--hairline-2); background: rgba(255, 255, 255, 0.35); padding: 1rem 1.1rem; margin-top: 0.4rem; }
+  .barset figcaption { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 0.8rem; }
+  .bar-row {
+    display: grid; grid-template-columns: minmax(8.5rem, 13rem) minmax(0, 1fr) auto;
+    grid-template-areas: "name track val";
+    gap: 0.35rem 1rem; align-items: center;
+    padding: 0.35rem 0;
   }
-  .card li b, .card p b { color: var(--text); font-weight: 600; }
-  .note {
-    margin-top: 22px; color: var(--faint); font-size: 13.5px;
-    border-left: 2px solid var(--border-strong); padding-left: 14px;
+  .bar-name { grid-area: name; font-size: 0.88rem; }
+  .bar-track { grid-area: track; display: block; height: 0.95rem; border: 1px solid var(--hairline-2); background: rgba(255, 255, 255, 0.5); }
+  .bar-fill { display: block; height: 100%; }
+  .bar-hatch { background: repeating-linear-gradient(45deg, var(--ink) 0 3px, transparent 3px 7px); }
+  .bar-blue { background: var(--blue); }
+  .bar-val { grid-area: val; font-family: var(--mono); font-size: 0.82rem; font-weight: 600; white-space: nowrap; }
+  .w-88 { width: 88%; } .w-76 { width: 76%; } .w-64 { width: 64%; }
+  .w-52 { width: 52%; } .w-40 { width: 40%; } .w-28 { width: 28%; }
+
+  /* ---------- flows ---------- */
+  .flow { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem 0; margin-top: 0.4rem; }
+  .flow li {
+    position: relative; margin-right: 1.7rem;
+    border: 1px solid var(--hairline-2); border-left: 3px solid var(--blue);
+    background: var(--paper-2);
+    padding: 0.4rem 0.75rem; font-size: 0.88rem; line-height: 1.5;
+  }
+  .flow li:not(:last-child)::after {
+    content: "→"; position: absolute; right: -1.4rem; top: 50%;
+    transform: translateY(-50%); color: var(--muted); font-family: var(--mono);
+  }
+  .flow .step-no { display: inline-block; font-family: var(--mono); font-size: 0.7rem; color: var(--blue); margin-right: 0.45rem; letter-spacing: 0.06em; }
+  .flow small { display: block; color: var(--muted); font-size: 0.72rem; }
+  .loop-back { font-family: var(--mono); font-size: 0.78rem; color: var(--blue-deep); margin-top: 0.5rem; }
+
+  /* ---------- swimlane ---------- */
+  .swimlane { border: 1px solid var(--hairline-2); margin-top: 0.4rem; }
+  .lane { padding: 0.85rem 1rem; }
+  .lane + .lane, .handoff { border-top: 1px solid var(--hairline-2); }
+  .lane-tag { display: block; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.16em; margin-bottom: 0.5rem; }
+  .lane-machine .lane-tag { color: var(--blue); }
+  .lane-human .lane-tag { color: var(--red); }
+  .lane ol { list-style: none; display: flex; flex-wrap: wrap; gap: 0.4rem 1.6rem; }
+  .lane li { position: relative; padding-left: 1rem; font-size: 0.9rem; }
+  .lane-machine li::before { content: "■"; position: absolute; left: 0; top: 0.15em; font-size: 0.55rem; color: var(--blue); }
+  .lane-human li::before { content: "■"; position: absolute; left: 0; top: 0.15em; font-size: 0.55rem; color: var(--red); }
+  .handoff { text-align: center; font-family: var(--mono); font-size: 0.74rem; color: var(--muted); padding: 0.35rem 1rem; }
+
+  /* ---------- case studies ---------- */
+  .case { margin-top: 2.4rem; border-top: 2px solid var(--ink); padding-top: 0.9rem; }
+  .case h3 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.2rem 0.9rem; }
+  .case-no { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.14em; color: var(--red); }
+  .facts { margin: 0.6rem 0 0; }
+  .fact { display: grid; grid-template-columns: 5.5rem minmax(0, 1fr); gap: 1rem; padding: 0.55rem 0; border-top: 1px solid var(--hairline); }
+  .fact dt { font-family: var(--mono); font-size: 0.76rem; letter-spacing: 0.18em; color: var(--muted); padding-top: 0.3rem; }
+  .fact dd { font-size: 0.94rem; }
+  .fact.f-risk dt { color: var(--red); }
+  .fact.f-act dt { color: var(--blue); }
+  .fact.f-out dt { color: var(--blue-deep); font-weight: 700; }
+  .fact.f-own dt { color: var(--ink); font-weight: 700; }
+  .case-figures { margin: 0.6rem 0; }
+  .own-tag { font-family: var(--mono); font-weight: 600; white-space: nowrap; }
+  .own-lead { color: var(--blue-deep); }
+  .own-core { color: var(--blue); }
+  .own-team { color: var(--muted); }
+
+  /* ---------- transfer table legend ---------- */
+  .legend { font-size: 0.82rem; color: var(--muted); margin-top: 0.7rem; border-left: 3px solid var(--hairline-2); padding-left: 0.9rem; }
+
+  /* ---------- principles ---------- */
+  .principles { list-style: none; margin-top: 0.4rem; }
+  .principles li { display: grid; grid-template-columns: 3.4rem minmax(0, 1fr); gap: 1rem; padding: 0.7rem 0; border-top: 1px solid var(--hairline); }
+  .principles .p-no { font-family: var(--mono); font-size: 0.78rem; color: var(--blue); padding-top: 0.35rem; }
+  .principles b { font-weight: 600; }
+  .principles span.p-desc { color: var(--muted); }
+  .closing {
+    margin-top: 2.2rem; border: 1px solid var(--hairline-2); border-left: 4px solid var(--blue);
+    background: rgba(255, 255, 255, 0.35); padding: 1.1rem 1.3rem; font-size: 0.95rem;
   }
 
-  /* flow steps */
-  .flow { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 22px; }
-  .step {
-    background: var(--surface-2); border: 1px solid var(--border);
-    border-radius: 10px; padding: 8px 14px; font-size: 14px; color: var(--text);
-    white-space: nowrap;
-  }
-  .step small { display: block; color: var(--faint); font-size: 12px; }
-  .arrow { color: var(--faint); font-size: 15px; }
-
-  /* timeline */
-  .timeline { margin-top: 30px; position: relative; padding-left: 26px; }
-  .timeline::before {
-    content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px;
-    width: 2px; background: linear-gradient(180deg, var(--accent), var(--accent-2));
-    opacity: 0.35; border-radius: 2px;
-  }
-  .t-item { position: relative; padding: 0 0 26px 14px; }
-  .t-item:last-child { padding-bottom: 4px; }
-  .t-item::before {
-    content: ""; position: absolute; left: -26px; top: 9px;
-    width: 12px; height: 12px; border-radius: 50%;
-    background: var(--bg); border: 3px solid var(--accent);
-  }
-  .t-range { font-size: 13px; color: var(--faint); letter-spacing: 0.06em; }
-  .t-item h3 { font-size: 17px; margin: 2px 0 4px; }
-  .t-item h3 em { font-style: normal; font-size: 14px; color: var(--accent); margin-left: 10px; }
-  .t-item p { color: var(--muted); font-size: 14.5px; max-width: 56em; }
-
-  /* skills */
-  .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
-  .skills .chip { font-size: 14px; padding: 8px 16px; color: var(--text); background: var(--surface); }
-
-  /* notice */
-  .notice-box {
-    margin-top: 30px; border: 1px solid rgba(251, 191, 36, 0.35);
-    background: rgba(251, 191, 36, 0.06); border-radius: 14px; padding: 24px 26px;
-  }
-  .notice-box h3 { color: var(--amber); font-size: 16px; margin-bottom: 12px; }
-  .notice-box ul { list-style: none; }
-  .notice-box li { color: var(--muted); font-size: 14.5px; padding: 4px 0 4px 20px; position: relative; }
-  .notice-box li::before { content: "—"; position: absolute; left: 0; color: var(--amber); }
-
-  footer {
-    border-top: 1px solid var(--border); margin-top: 72px;
-    background: var(--bg-soft);
-  }
-  .footer-inner {
-    max-width: 1080px; margin: 0 auto; padding: 30px 24px 40px;
-    color: var(--faint); font-size: 13.5px;
-    display: flex; flex-wrap: wrap; gap: 10px 26px; justify-content: space-between;
-  }
+  /* ---------- footer ---------- */
+  footer { border-top: 2px solid var(--ink); margin-top: 4rem; background: var(--paper-2); }
+  .foot-inner { max-width: 68rem; margin: 0 auto; padding: 2.4rem 1.5rem 2.8rem; }
+  .foot-inner h2 { font-size: 1.05rem; font-family: var(--serif); }
+  .foot-list { list-style: none; margin-top: 0.8rem; max-width: 52rem; }
+  .foot-list li { position: relative; padding: 0.25rem 0 0.25rem 1.2rem; font-size: 0.84rem; color: var(--muted); }
+  .foot-list li::before { content: "—"; position: absolute; left: 0; color: var(--hairline-2); }
+  .foot-colophon { margin-top: 1.6rem; font-family: var(--mono); font-size: 0.74rem; letter-spacing: 0.06em; color: var(--muted); }
 
   /* ---------- responsive ---------- */
-  @media (max-width: 900px) {
-    .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  @media (max-width: 960px) {
+    .ch-head { grid-template-columns: 1fr; }
+    .ch-gutter { display: flex; align-items: baseline; gap: 1rem; }
+    .ch-no { font-size: 2.2rem; }
+    .ch-note { margin-top: 0; }
+    .ch-titling { grid-column: 1; }
+    .hero-grid { grid-template-columns: 1fr; gap: 1.8rem; padding-top: 3rem; }
+    .hero-side { flex-direction: row; align-items: center; gap: 1.6rem; }
+    .hero-note { border-top: 0; border-left: 2px solid var(--hairline-2); padding: 0.2rem 0 0.2rem 1rem; }
   }
-  @media (max-width: 620px) {
-    .hero-inner { padding: 60px 20px 52px; }
-    main { padding: 0 20px; }
-    .grid-2, .grid-3 { grid-template-columns: 1fr; }
-    section { padding: 48px 0 4px; }
-    .topbar-inner { padding: 10px 16px; gap: 12px; }
-    .brand small { display: none; }
-    nav.links a { padding: 6px 10px; }
-    .card { padding: 18px; }
+  @media (max-width: 719px) {
+    .data-table thead { display: none; }
+    .data-table, .data-table tbody, .data-table tr, .data-table th, .data-table td { display: block; width: auto; }
+    .data-table tr { padding: 0.85rem 0; border-bottom: 1px solid var(--hairline-2); }
+    .data-table th, .data-table td { border-bottom: 0; padding: 0.18rem 0; }
+    .data-table td::before {
+      content: attr(data-col); display: block;
+      font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.12em;
+      color: var(--muted); margin-bottom: 0.05rem;
+    }
+    .timeline li { grid-template-columns: 1fr; gap: 0.15rem; }
+    .fact { grid-template-columns: 1fr; gap: 0.1rem; padding: 0.6rem 0; }
   }
+  @media (max-width: 560px) {
+    .bar-row { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "name name" "track val"; }
+    .hero-side { flex-direction: column; align-items: flex-start; }
+    .hero-note { border-left: 0; border-top: 2px solid var(--hairline-2); padding: 0.8rem 0 0; }
+    .topbar-inner { padding: 4px 1rem; }
+    .chapter { padding: 3rem 1.25rem 0.5rem; }
+  }
+
+  /* ---------- motion ---------- */
+  @media (prefers-reduced-motion: no-preference) {
+    html { scroll-behavior: smooth; }
+    @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+    .hero-main > * { animation: rise 0.55s ease-out both; }
+    .hero-main > *:nth-child(2) { animation-delay: 0.06s; }
+    .hero-main > *:nth-child(3) { animation-delay: 0.12s; }
+    .hero-main > *:nth-child(4) { animation-delay: 0.18s; }
+    .hero-main > *:nth-child(5) { animation-delay: 0.24s; }
+    .hero-main > *:nth-child(6) { animation-delay: 0.3s; }
+    .hero-side .hero-note { animation: rise 0.55s ease-out 0.3s both; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+
+  /* ---------- print ---------- */
   @media print {
-    .topbar { display: none; }
-    body { background: #fff; color: #111; }
+    :root { --paper: #ffffff; --paper-2: #ffffff; --ink: #111111; --muted: #444444; --hairline: #cccccc; --hairline-2: #999999; --blue: #1d5aa0; --blue-deep: #123f74; --red: #8f2c1f; --grid: transparent; --hl: rgba(29, 90, 160, 0.2); }
+    body { background: #ffffff; background-image: none; font-size: 10.5pt; }
+    *, *::before, *::after { animation: none !important; transition: none !important; opacity: 1 !important; }
+    .topbar, .skip { display: none; }
+    a { color: #111111; text-decoration: none; }
+    .chapter { padding: 1.4rem 0.5rem 0.2rem; }
+    .hero-grid { padding: 1.5rem 0.5rem 1.2rem; }
+    .stamp { transform: none; }
+    .ch-no { color: #cccccc; -webkit-text-stroke: 0; }
+    .barset, .flow, .swimlane, .fact, .principles li, .timeline li, .closing, .bar-row { break-inside: avoid; }
+    .data-table tr { break-inside: avoid; }
+    h2, h3 { break-after: avoid; }
+    .case { break-before: auto; }
+    @page { margin: 16mm 14mm; }
   }
 </style>
 </head>
 <body>
 <a class="skip" href="#main">跳到主要内容</a>
 
-<div class="topbar">
+<header class="topbar">
   <div class="topbar-inner">
-    <div class="brand">蔡伟<small>个人简介 · 公开脱敏版</small></div>
-    <nav class="links" aria-label="页面导航">
-      <a href="#about">简介</a>
-      <a href="#career">经历</a>
-      <a href="#method">方法论</a>
-      <a href="#automation">测试自动化</a>
-      <a href="#quality">质量治理</a>
-      <a href="#ai">AI 实践</a>
-      <a href="#stewardship">资源治理</a>
-      <a href="#skills">能力总览</a>
-      <a href="#notice">脱敏说明</a>
+    <a class="brand" href="#top">蔡伟<span class="brand-sub">REVIEW DOSSIER · 公开脱敏版</span></a>
+    <nav aria-label="章节导航">
+      <ul class="nav-list">
+        <li><a href="#career">履历</a></li>
+        <li><a href="#impact">影响台账</a></li>
+        <li><a href="#cases">案例复盘</a></li>
+        <li><a href="#tech">技术深潜</a></li>
+        <li><a href="#leverage">影响力</a></li>
+        <li><a href="#capability">能力与原则</a></li>
+      </ul>
     </nav>
   </div>
-</div>
+</header>
 
 <header class="hero" id="top">
-  <div class="hero-inner">
-    <p class="kicker">Personal Profile · Quality Engineering &amp; AI</p>
-    <h1>蔡伟</h1>
-    <p class="role">测试高级经理 &amp; 测试专家</p>
-    <p class="tagline">
-      17 年测试开发与质量管理经验，覆盖电信、网络设备、互联网与智能汽车行业。
-      近年聚焦智能座舱平台测试体系建设、大规模测试自动化与 AI 质量工程实践，
-      持续把个人经验沉淀为团队可复用的工程能力。
-    </p>
-    <div class="hero-tags">
-      <span class="chip"><b>测试策略与体系</b></span>
-      <span class="chip"><b>测试自动化平台</b></span>
-      <span class="chip"><b>AI 质量工程</b></span>
-      <span class="chip"><b>质量度量与治理</b></span>
-      <span class="chip"><b>团队建设</b></span>
+  <div class="hero-grid">
+    <div class="hero-main">
+      <p class="kicker">PERSONAL REVIEW DOSSIER · 工程评审卷宗</p>
+      <h1>蔡伟</h1>
+      <p class="hero-role">测试高级经理 / 测试专家</p>
+      <p class="hero-meta">质量工程 · 测试自动化 · AI 质量实践 ｜ 从业 17 年（2009 年至今）</p>
+      <p class="thesis">主张：把个人经验沉淀为规则与工具，让系统承接重复执行，把人留在判断与责任的边界上。</p>
+      <ul class="hero-results">
+        <li><span class="idx">R1</span><span>所负责范围漏测率多个周期持续下降，累计降幅 <b class="mask">**%</b> <span class="fine">（口径见第 02 节）</span></span></li>
+        <li><span class="idx">R2</span><span>无人值守持续测试流水线落地，版本级回归人力降至 <b class="mask">** 人时/版本</b></span></li>
+        <li><span class="idx">R3</span><span>共享测试服务与方法沉淀，跨 <b class="mask">** 个项目</b>复用</span></li>
+      </ul>
+      <p class="hero-cta"><a href="#cases">阅读三个深度案例 →</a><a href="#impact">查看影响台账 →</a></p>
     </div>
-    <p class="badge">公开脱敏版本：企业与内部信息已移除或泛化，详见<a href="#notice">脱敏说明</a>。</p>
+    <aside class="hero-side">
+      <p class="stamp">已脱敏 · 公开版<small>SANITIZED COPY</small></p>
+      <p class="hero-note">本页为公开脱敏版本：现任企业与组织信息已泛化，项目与业务数据已移除，量化结果以 <b class="mask">**</b> 占位，仅保留指标类型、方向与口径。详见<a href="#notice">文末脱敏声明</a>。</p>
+    </aside>
   </div>
 </header>
 
 <main id="main">
 
-  <!-- 01 简介 -->
-  <section id="about" aria-labelledby="h-about">
-    <p class="sec-kicker">01 · Profile</p>
-    <h2 id="h-about">个人简介</h2>
-    <p class="sec-lead">
-      从测试开发工程师成长为测试专家与团队管理者，经历了电信、网络设备、互联网科技与智能汽车等多个领域。
-      现就职于一家智能出行领域科技企业，负责平台级测试业务与团队管理，主导测试自动化体系与
-      AI 质量工程实践，在交付范围扩大、资源收紧的约束下，持续以「提升单位投入产出」为主线推动改进。
-    </p>
-    <div class="grid grid-3">
-      <div class="card">
-        <h3><span class="no">A</span>工程与业务并重</h3>
-        <p>既深入测试技术细节（图像、音频、设备控制、流水线工程），也关注业务目标与质量判断，
-           把技术方案落到可度量的交付结果上。</p>
+  <!-- 01 履历脊线 -->
+  <section class="chapter" id="career" aria-labelledby="h-career">
+    <header class="ch-head">
+      <div class="ch-gutter">
+        <span class="ch-no" aria-hidden="true">01</span>
+        <span class="ch-note">SEC. 01 · CAREER SPINE</span>
       </div>
-      <div class="card">
-        <h3><span class="no">B</span>经验到能力的转化</h3>
-        <p>坚持「学习 → 验证 → 沉淀」：先快速进入新领域形成验证能力，再通过工具、文档与培训
-           把个人所学转化为团队可复用资产。</p>
+      <div class="ch-titling">
+        <p class="ch-kicker">履历脊线 · CAREER SPINE</p>
+        <h2 id="h-career">教育与职业经历，以及职责范围的演进</h2>
+        <p class="ch-lead">教育与公开任职经历按公开简历惯例保留；现任企业按要求做泛化表述。任职期间的职责范围经历四个阶段演进，本卷宗的案例与台账均来自这条路径。</p>
       </div>
-      <div class="card">
-        <h3><span class="no">C</span>拥抱变化</h3>
-        <p>以「会、好、快」回应质疑与变化：快速学习陌生领域、保证质量底线、
-           用自动化与持续集成不断缩短交付周期。</p>
-      </div>
-    </div>
-  </section>
+    </header>
+    <div class="ch-body">
+      <p class="vis-title">职责范围演进 · SCOPE EVOLUTION</p>
+      <ol class="evolution">
+        <li><span class="e-no">阶段一</span><b>组件与应用测试</b><span class="ev-desc">测试开发与执行，建立质量基线与判定依据。</span></li>
+        <li><span class="e-no">阶段二</span><b>平台底座测试</b><span class="ev-desc">环境复位、设备与资源调度等平台级难题，成为后续自动化的地基。</span></li>
+        <li><span class="e-no">阶段三</span><b>跨域质量治理</b><span class="ev-desc">以指标体系与漏出闭环，把质量判断从单项目经验推进为跨项目机制。</span></li>
+        <li><span class="e-no">阶段四</span><b>自动化与 AI 能力建设</b><span class="ev-desc">持续测试平台服务化，与智能化质量工具的团队级落地。</span></li>
+      </ol>
 
-  <hr class="divider">
-
-  <!-- 02 经历 -->
-  <section id="career" aria-labelledby="h-career">
-    <p class="sec-kicker">02 · Career</p>
-    <h2 id="h-career">教育与职业经历</h2>
-    <p class="sec-lead">现任企业按脱敏要求做泛化表述，其余经历按公开简历惯例保留。</p>
-    <div class="timeline">
-      <div class="t-item">
-        <div class="t-range">2002.09 — 2009.06</div>
-        <h3>西安电子科技大学<em>本硕</em></h3>
-        <p>电子信息科学与技术（本科）；无线电物理 · 光学方向（硕士）。</p>
-      </div>
-      <div class="t-item">
-        <div class="t-range">2009.09 — 2011.03</div>
-        <h3>UTStarcom<em>测试开发工程师</em></h3>
-        <p>通信领域测试开发起步，积累测试脚本、工具与流程基础。</p>
-      </div>
-      <div class="t-item">
-        <div class="t-range">2011.03 — 2015.03</div>
-        <h3>Aerohive Networks<em>测试开发 Leader</em></h3>
-        <p>网络设备领域带领测试开发工作，负责自动化框架与团队协作。</p>
-      </div>
-      <div class="t-item">
-        <div class="t-range">2015.03 — 2020.06</div>
-        <h3>仟金顶网络科技有限公司<em>产品技术总监</em></h3>
-        <p>互联网科技领域产品与技术管理，拓宽了从测试视角之外理解研发全链路的能力。</p>
-      </div>
-      <div class="t-item">
-        <div class="t-range">2020.07 — 至今</div>
-        <h3>某智能出行领域科技企业<em>测试高级经理 &amp; 测试专家</em></h3>
-        <p>从组件与应用测试，到计算平台底座测试，再到跨项目的自动化与 AI 能力建设；
-           职责覆盖平台交付、质量判断与测试体系建设，并主导智能化质量工具的落地。</p>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- 03 方法论 -->
-  <section id="method" aria-labelledby="h-method">
-    <p class="sec-kicker">03 · Methodology</p>
-    <h2 id="h-method">方法论：把经验变成可复用的工程能力</h2>
-    <p class="sec-lead">
-      提效的路径是渐进的：先把个人经验梳理为规则，再把规则沉淀为工具，
-      AI 在其中加速「经验 → 工具」的转化；人始终负责规则有效性、关键判断与质量责任。
-    </p>
-    <div class="grid grid-3">
-      <div class="card">
-        <h3><span class="no">01</span>人治 · 经验驱动</h3>
-        <p>梳理个人经验：识别输入、输出与判断依据，从现场问题中定位瓶颈。</p>
-      </div>
-      <div class="card">
-        <h3><span class="no">02</span>法治 · 规则驱动</h3>
-        <p>把做法沉淀为可执行的 SOP 与判定规则，让相同问题可以被重复、一致地处理。</p>
-      </div>
-      <div class="card">
-        <h3><span class="no">03</span>自动化 · 工具驱动</h3>
-        <p>以规则为基础沉淀脚本、流程与工具，把重复动作交给系统执行，AI 辅助梳理规则、
-           生成工具与持续维护。</p>
-      </div>
-    </div>
-    <div class="flow" aria-label="目标闭环">
-      <span class="step">业务目标</span><span class="arrow">→</span>
-      <span class="step">发现问题</span><span class="arrow">→</span>
-      <span class="step">结合 AI 解决问题</span><span class="arrow">→</span>
-      <span class="step">验证效果</span><span class="arrow">→</span>
-      <span class="step">沉淀方法与经验</span><span class="arrow">⟳</span>
-    </div>
-    <p class="note">以终为始，持续迭代回到业务目标；工具需经验证后投入使用，复杂架构与安全治理仍需专业支持。</p>
-  </section>
-
-  <hr class="divider">
-
-  <!-- 04 测试自动化 -->
-  <section id="automation" aria-labelledby="h-automation">
-    <p class="sec-kicker">04 · Test Automation</p>
-    <h2 id="h-automation">测试自动化与平台建设</h2>
-    <p class="sec-lead">
-      从主导无人值守自动化流水线起步，到参与大规模持续测试平台的核心建设：
-      让系统承接重复执行，人保留异常复核与准出决策。
-    </p>
-
-    <div class="grid grid-2">
-      <div class="card">
-        <h3><span class="no">01</span>无人值守自动化流水线</h3>
-        <p>主导建设覆盖版本获取、环境准备、执行验证与结果回传的全流程自动化流水线，
-           打通平台级持续运行能力，明显减少手工准备、持续盯守与证据整理工作。</p>
-      </div>
-      <div class="card">
-        <h3><span class="no">02</span>规模化持续测试平台</h3>
-        <p>参与平台核心建设与服务化演进：需求方可自助触发并获取测试服务，
-           测试负责人能够以较低依赖调整场景逻辑；工具逐步走出测试团队，
-           支持项目经理、研发等角色自助使用。</p>
-      </div>
-      <div class="card">
-        <h3><span class="no">03</span>关键测试技术方向</h3>
-        <p>围绕图像识别与音画同步、音频比对、设备与资源控制等真实测试难点开展技术攻关，
-           形成可复用的测试方法，并将相关成果沉淀为专利申请与软件著作权。</p>
-      </div>
-      <div class="card">
-        <h3><span class="no">04</span>方法与规范沉淀</h3>
-        <p>把平台建设经验整理为可复用的流程与规范，通过文档与培训在团队内推广，
-           让自动化能力能够被团队持续承接与迭代。</p>
-      </div>
-    </div>
-    <p class="note">本页不呈现具体业务规模与运营数据；相关工作经历均为定性描述。</p>
-  </section>
-
-  <hr class="divider">
-
-  <!-- 05 质量治理 -->
-  <section id="quality" aria-labelledby="h-quality">
-    <p class="sec-kicker">05 · Quality Governance</p>
-    <h2 id="h-quality">以质量治理守住边界</h2>
-    <p class="sec-lead">
-      把主观的质量判断转化为指标、改进动作和验收证据，效率提升才有明确方向：
-      先定义指标，再用漏出原因反推测试盲区，最后以工具支撑分析与行动闭环。
-    </p>
-    <div class="grid grid-2">
-      <div class="card">
-        <h3><span class="no">01</span>指标定义：漏测率</h3>
-        <p>漏测率 = 外部反馈故障分 ÷ 内部发现故障分。减少外部反馈、增加内部发现，
-           即可降低漏测率；指标方向明确后，测试左移与提效动作都有了统一靶心。</p>
-        <div class="flow">
-          <span class="step">漏出原因分析</span><span class="arrow">→</span>
-          <span class="step">行动计划</span><span class="arrow">→</span>
-          <span class="step">指标复评</span><span class="arrow">⟳</span>
-        </div>
-      </div>
-      <div class="card">
-        <h3><span class="no">02</span>漏出原因 → 改进动作</h3>
-        <ul>
-          <li>测试点不清晰 → 优化用例，明确测试点</li>
-          <li>无用例覆盖 → 分析测试方法，补充用例</li>
-          <li>设备资源缺口 → 提前申请与跟踪实车、设备资源</li>
-          <li>执行时间不足 → 提升自动化覆盖率，加快验证速度</li>
-          <li>偶现问题 → 对开关机、显示异常、卡死等场景自动化压测</li>
-        </ul>
-      </div>
-    </div>
-    <div class="grid grid-2">
-      <div class="card">
-        <h3><span class="no">03</span>早期实践</h3>
-        <p>通过指标牵引与漏出原因闭环，持续补齐用例、明确测试点、加强薄弱场景验证，
-           推动所负责范围的漏测率指标长期保持改善趋势。</p>
-      </div>
-      <div class="card">
-        <h3><span class="no">04</span>工具化治理</h3>
-        <p>针对数据反复拉取、结论难复用、行动难跟踪的问题，引入工作流自动化做数据同步与
-           结构化治理，让分析结论与改进行动能够持续闭环运转。</p>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- 06 AI 实践 -->
-  <section id="ai" aria-labelledby="h-ai">
-    <p class="sec-kicker">06 · AI in Quality</p>
-    <h2 id="h-ai">AI 质量工程实践</h2>
-    <p class="sec-lead">
-      AI 不只用于执行与分析，而是前移到测试设计与版本准入：检索、召回与生成交给机器，
-      确认与放行留给人。策略边界清晰——AI 负责理解、召回与生成；测试人员负责确认、修订与准入。
-    </p>
-    <div class="grid grid-2">
-      <div class="card">
-        <h3><span class="no">A</span>多语种视觉检查</h3>
-        <p>面对小语种与 RTL 布局等场景，人工难以稳定识别字符错误、语义断句与界面异常。
-           以「区域抓取 → 字符识别与翻译比对 → 错位、遮挡与溢出检测」的链路切入，
-           把重复性感知任务交给 AI，在真实业务问题中验证其应用价值。</p>
-      </div>
-      <div class="card">
-        <h3><span class="no">B</span>测试用例智能生成</h3>
-        <p>需求、历史缺陷与法规标准分散，人工检索慢且易遗漏边界场景。
-           解析需求并召回历史缺陷与法规条款，自动生成测试步骤与预期结果；
-           人工确认场景边界与预期，低置信度内容回退人工补充。
-           该方向为团队阶段性共建成果，非个人独立产出。</p>
-      </div>
-      <div class="card">
-        <h3><span class="no">C</span>版本准入门禁</h3>
-        <p>对齐提交记录与版本说明，自动生成风险对齐材料、影响面与测试建议，
-           形成可人工确认的门禁材料，支撑「放行 / 补充 / 驳回」的准入决策，
-           把问题拦截在执行开始之前。</p>
-      </div>
-      <div class="card">
-        <h3><span class="no">D</span>缺陷处理闭环</h3>
-        <p>把缺陷处理经验沉淀为覆盖识别、判定、提交与跟进环节的标准作业流程；
-           在此之上实现自动分析与整理、辅助提交与状态推进，
-           人工守住提交质量与异常处理。</p>
-      </div>
-      <div class="card">
-        <h3><span class="no">E</span>共享技能库</h3>
-        <p>从缺陷提交场景的个人技能起步，经团队共建形成统一调用、按需组合的共享技能库，
-           并向缺陷验复、报告生成等共性场景拓展，让一个项目的沉淀能够在多个项目复用。</p>
-      </div>
-      <div class="card">
-        <h3><span class="no">F</span>质量过程审计链</h3>
-        <p>数据连接 → 规则执行 → 异常汇总 → 证据保存 → 人工审批，形成可追踪的审计链；
-           系统完成连接、执行、汇总与留证，人员负责规则确认与审批决策。
-           该能力为团队协作成果。</p>
-      </div>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- 07 负责任的 AI 资源管理 -->
-  <section id="stewardship" aria-labelledby="h-stewardship">
-    <p class="sec-kicker">07 · Responsible AI Use</p>
-    <h2 id="h-stewardship">负责任的 AI 资源管理</h2>
-    <p class="sec-lead">
-      AI 使用规模化之后，使用需求与可用资源之间的平衡是必须正面应对的课题。
-      我的做法是把资源管理当作一项持续的治理工作，而不是一次性的技术选择。
-    </p>
-    <div class="grid grid-3">
-      <div class="card">
-        <h3><span class="no">01</span>识别约束</h3>
-        <p>关注使用规模、使用强度与可用资源之间的平衡，
-           在问题影响团队使用体验之前，主动识别并暴露瓶颈。</p>
-      </div>
-      <div class="card">
-        <h3><span class="no">02</span>合理组织</h3>
-        <ul>
-          <li>统一组织与管理可用资源，兼顾不同使用强度的成员</li>
-          <li>按任务性质选择合适的工具与模型，把资源优先投入关键任务</li>
-          <li>与团队约定使用规范，减少不必要的消耗</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3><span class="no">03</span>守住边界</h3>
-        <p>资源安排不以牺牲任务质量与必要验证为代价；
-           先验证效果、再扩大使用范围，让 AI 在团队中可持续地用下去。</p>
-      </div>
-    </div>
-    <p class="note">本页不呈现资源规模与供给安排相关信息；以上为一般性治理原则的定性描述。</p>
-  </section>
-
-  <hr class="divider">
-
-  <!-- 08 能力总览 -->
-  <section id="skills" aria-labelledby="h-skills">
-    <p class="sec-kicker">08 · Capabilities</p>
-    <h2 id="h-skills">能力总览</h2>
-    <div class="skills">
-      <span class="chip">测试策略与体系建设</span>
-      <span class="chip">自动化框架与流水线工程</span>
-      <span class="chip">持续集成 / 持续测试</span>
-      <span class="chip">图像与音频测试技术</span>
-      <span class="chip">设备控制与资源调度</span>
-      <span class="chip">AI 用例生成与版本门禁</span>
-      <span class="chip">缺陷分析自动化（SOP + 智能体）</span>
-      <span class="chip">质量度量与漏测治理</span>
-      <span class="chip">AI 资源治理</span>
-      <span class="chip">跨团队协作与共享能力建设</span>
-      <span class="chip">团队管理与专项培训</span>
-      <span class="chip">专利与软件著作权沉淀</span>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- 09 脱敏说明 -->
-  <section id="notice" aria-labelledby="h-notice">
-    <p class="sec-kicker">09 · Notice</p>
-    <h2 id="h-notice">脱敏说明</h2>
-    <div class="notice-box">
-      <h3>本页面为公开脱敏版本</h3>
-      <ul>
-        <li>本页面由内部完整版工作总结删节整理而成，仅保留个人职业背景、方法论与定性化的成果描述。</li>
-        <li>已移除或泛化的内容包括：现任企业与组织部门名称、项目与产品代号、客户与业务相关数据、
-            规模与运营细节、资源与供给安排、内部资料来源与链接，以及内部流程细节。</li>
-        <li>页面不呈现业务数字与量化指标；经历与成果均为定性描述，
-            不代表任何组织的承诺或结论。</li>
-        <li>完整细节不对外提供；如需了解或核实，请通过适当渠道与本人联系。</li>
-        <li>本页面为纯静态内容：不引用外部资源、不嵌入脚本依赖、不收集任何访问数据。</li>
+      <p class="vis-title">教育与任职 · TIMELINE</p>
+      <ul class="timeline">
+        <li>
+          <span class="t-range">2002.09 — 2009.06</span>
+          <div><b>西安电子科技大学</b><span class="t-role">本硕</span>
+          <p>电子信息科学与技术（本科）；无线电物理 · 光学方向（硕士）。</p></div>
+        </li>
+        <li>
+          <span class="t-range">2009.09 — 2011.03</span>
+          <div><b>UTStarcom</b><span class="t-role">测试开发工程师</span>
+          <p>通信领域测试开发起步，积累测试脚本、工具与流程基础。</p></div>
+        </li>
+        <li>
+          <span class="t-range">2011.03 — 2015.03</span>
+          <div><b>Aerohive Networks</b><span class="t-role">测试开发 Leader</span>
+          <p>网络设备领域带领测试开发工作，负责自动化框架与团队协作。</p></div>
+        </li>
+        <li>
+          <span class="t-range">2015.03 — 2020.06</span>
+          <div><b>仟金顶网络科技有限公司</b><span class="t-role">产品技术总监</span>
+          <p>互联网科技领域产品与技术管理，拓宽了从测试视角之外理解研发全链路的能力。</p></div>
+        </li>
+        <li>
+          <span class="t-range">2020.07 — 至今</span>
+          <div><b>某智能出行领域科技企业</b><span class="t-role">测试高级经理 &amp; 测试专家</span>
+          <p>职责覆盖平台交付、质量判断与测试体系建设，主导自动化体系与智能化质量工具的落地；具体组织与项目信息按脱敏要求泛化。</p></div>
+        </li>
       </ul>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 02 影响台账 -->
+  <section class="chapter" id="impact" aria-labelledby="h-impact">
+    <header class="ch-head">
+      <div class="ch-gutter">
+        <span class="ch-no" aria-hidden="true">02</span>
+        <span class="ch-note">SEC. 02 · IMPACT LEDGER</span>
+      </div>
+      <div class="ch-titling">
+        <p class="ch-kicker">影响台账 · IMPACT LEDGER</p>
+        <h2 id="h-impact">方向与口径，而非绝对数值</h2>
+        <p class="ch-lead">公开版本不呈现真实数值。下表保留指标类型、变化方向与度量口径，<b class="mask">**</b> 为脱敏占位符——它不代表零，也不代表数据缺失。</p>
+      </div>
+    </header>
+    <div class="ch-body">
+      <p class="vis-title">影响对比示意 · 回归人力投入（条长仅表示方向，非真实比例；数值已脱敏）</p>
+      <figure class="barset">
+        <figcaption>图 2-1 ｜ 版本级回归人力投入：流水线化前后对比（示意）</figcaption>
+        <div class="bar-row">
+          <span class="bar-name">流水线前 · 人工准备与盯守为主</span>
+          <span class="bar-track" aria-hidden="true"><span class="bar-fill bar-hatch w-88"></span></span>
+          <span class="bar-val">** 人时/版本</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-name">流水线后 · 无人值守执行为主</span>
+          <span class="bar-track" aria-hidden="true"><span class="bar-fill bar-blue w-28"></span></span>
+          <span class="bar-val">** 人时/版本</span>
+        </div>
+      </figure>
+      <p class="vis-cap">文字等价：引入无人值守流水线前，版本级回归以人工准备与盯守为主、投入较高；引入后以无人值守执行为主、投入明显降低。两侧数值均以 ** 脱敏。</p>
+
+      <p class="vis-title">影响台账 · LEDGER</p>
+      <table class="data-table">
+        <thead>
+          <tr><th scope="col">指标类型</th><th scope="col">方向</th><th scope="col">脱敏值</th><th scope="col">口径与度量方法</th><th scope="col">关联工作</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">漏测率</th>
+            <td><span class="dir">↓ 下降</span></td>
+            <td><span class="val">**%</span></td>
+            <td>外部反馈故障分 ÷ 内部发现故障分，按周期复评，累计降幅。</td>
+            <td>质量治理回路（案例 B）</td>
+          </tr>
+          <tr>
+            <th scope="row">版本级回归人力投入</th>
+            <td><span class="dir">↓ 下降</span></td>
+            <td><span class="val">** 人时/版本</span></td>
+            <td>无人值守流水线替代人工准备与盯守后的平均单版本投入。</td>
+            <td>持续测试平台（案例 A）</td>
+          </tr>
+          <tr>
+            <th scope="row">可无人值守执行场景</th>
+            <td><span class="dir">↑ 扩大</span></td>
+            <td><span class="val">** 项场景</span></td>
+            <td>已纳入流水线、可免人工盯守完成的场景数量。</td>
+            <td>自动化成熟度路径（案例 A）</td>
+          </tr>
+          <tr>
+            <th scope="row">共享测试服务复用</th>
+            <td><span class="dir">↑ 扩大</span></td>
+            <td><span class="val">** 个项目</span></td>
+            <td>其他项目直接调用共享服务而非重复建设的范围。</td>
+            <td>平台服务化与共享技能库</td>
+          </tr>
+          <tr>
+            <th scope="row">用例设计与审计准备耗时</th>
+            <td><span class="dir">↓ 下降</span></td>
+            <td><span class="val">**%</span></td>
+            <td>「AI 召回生成 + 人工确认」相比纯人工流程的耗时降幅。</td>
+            <td>AI 辅助设计与审计（案例 C）</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="vis-cap">说明：表中仅保留指标类型、方向与口径；不含任何真实数值、区间、项目组合构成、人员规模或资源数据。</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 03 案例复盘 -->
+  <section class="chapter" id="cases" aria-labelledby="h-cases">
+    <header class="ch-head">
+      <div class="ch-gutter">
+        <span class="ch-no" aria-hidden="true">03</span>
+        <span class="ch-note">SEC. 03 · CASE FILES</span>
+      </div>
+      <div class="ch-titling">
+        <p class="ch-kicker">案例复盘 · CASE FILES</p>
+        <h2 id="h-cases">三个深度案例</h2>
+        <p class="ch-lead">覆盖平台、治理与智能化三条主线。每个案例按同一结构复盘：背景、约束、诊断、干预、取舍、结果、复盘与主导角色；结果数值已脱敏，团队协作成果均标注归属。</p>
+      </div>
+    </header>
+    <div class="ch-body">
+
+      <article class="case" id="case-a" aria-labelledby="h-case-a">
+        <h3 id="h-case-a"><span class="case-no">案例 A</span>持续测试平台：从无人值守流水线到共享测试服务</h3>
+        <dl class="facts">
+          <div class="fact"><dt>背景</dt><dd>版本节奏加快、回归范围扩大，测试的准备、执行与取证高度依赖人工，人力消耗在环节衔接处而非判断上。</dd></div>
+          <div class="fact f-risk"><dt>约束</dt><dd>设备与车辆资源有限且存在争用；环境状态复杂、复位困难；质量证据必须完整，不能为速度牺牲取证。</dd></div>
+          <div class="fact"><dt>诊断</dt><dd>瓶颈不在单点执行速度，而在「触发—准备—执行—回传」的链路断裂：每个环节都能做，但串不起来。</dd></div>
+          <div class="fact f-act"><dt>干预</dt><dd>主导打通七步流水线（见图 3-1），把环境复位与资源调度做成一等环节；随后沿自动化成熟度路径推进服务化，让需求方可以自助触发（见图 3-2）。</dd></div>
+        </dl>
+        <div class="case-figures">
+          <p class="vis-title">图 3-1 ｜ 持续测试流水线七步链路</p>
+          <ol class="flow" aria-label="持续测试流水线七个环节，按执行顺序">
+            <li><span class="step-no">01</span>版本触发</li>
+            <li><span class="step-no">02</span>制品获取</li>
+            <li><span class="step-no">03</span>环境复位</li>
+            <li><span class="step-no">04</span>软件升级</li>
+            <li><span class="step-no">05</span>资源调度</li>
+            <li><span class="step-no">06</span>执行取证</li>
+            <li><span class="step-no">07</span>结果回传</li>
+          </ol>
+          <p class="vis-cap">文字等价：按序为 版本触发 → 制品获取 → 环境复位 → 软件升级 → 资源调度 → 执行取证 → 结果回传；环境复位与资源调度前置保障无人值守成立。</p>
+          <p class="vis-title">图 3-2 ｜ 自动化成熟度演进路径</p>
+          <ol class="flow" aria-label="自动化成熟度五个阶段，按演进顺序">
+            <li><span class="step-no">L1</span>无人值守<small>单任务可自动执行</small></li>
+            <li><span class="step-no">L2</span>并行资源<small>多任务并发调度</small></li>
+            <li><span class="step-no">L3</span>自助触发<small>需求方自助发起</small></li>
+            <li><span class="step-no">L4</span>场景编排<small>任务可组合复用</small></li>
+            <li><span class="step-no">L5</span>共享测试服务<small>跨项目直接复用</small></li>
+          </ol>
+          <p class="vis-cap">文字等价：无人值守 → 并行资源 → 自助触发 → 场景编排 → 共享测试服务；每一级都以上一级的稳定运行为前提。</p>
+        </div>
+        <dl class="facts">
+          <div class="fact f-out"><dt>结果</dt><dd>版本级回归人力降至 <b class="mask">** 人时/版本</b>，无人值守运行成为常态，取证材料随执行自动归集。</dd></div>
+          <div class="fact"><dt>复盘</dt><dd>平台的价值不以「能跑」衡量，而以「他人能否在没有我的情况下自助使用」衡量。</dd></div>
+          <div class="fact f-own"><dt>主导角色</dt><dd><span class="own-tag own-lead">个人主导</span> 七步流水线的早期建设；<span class="own-tag own-core">核心参与</span> 平台核心能力与规模化运营为团队协作成果，非个人独立产出。</dd></div>
+        </dl>
+      </article>
+
+      <article class="case" id="case-b" aria-labelledby="h-case-b">
+        <h3 id="h-case-b"><span class="case-no">案例 B</span>质量治理回路：让提效有靶心</h3>
+        <dl class="facts">
+          <div class="fact"><dt>背景</dt><dd>效率改进缺少统一方向，质量判断依赖个人经验，改进动作难以复盘与传承。</dd></div>
+          <div class="fact f-risk"><dt>约束</dt><dd>质量数据分散在多处、口径不一；指标一旦上线，还可能被应付性达标。</dd></div>
+          <div class="fact"><dt>诊断</dt><dd>先把「质量好不好」翻译成可计算、可复评的指标——漏测率 = 外部反馈故障分 ÷ 内部发现故障分；指标方向明确后，漏出分类才能反推测试盲区。</dd></div>
+          <div class="fact f-act"><dt>干预</dt><dd>建立「指标 → 漏出分类 → 根因 → 改进 → 复评」的闭环（见图 3-3），配套常见原因到改进动作的映射（见表 3-1）；针对数据反复拉取、结论难复用的问题，引入工作流自动化做数据同步与结构化治理。</dd></div>
+        </dl>
+        <div class="case-figures">
+          <p class="vis-title">图 3-3 ｜ 质量治理闭环</p>
+          <ol class="flow" aria-label="质量治理闭环五个环节，按顺序循环">
+            <li><span class="step-no">01</span>指标</li>
+            <li><span class="step-no">02</span>漏出分类</li>
+            <li><span class="step-no">03</span>根因</li>
+            <li><span class="step-no">04</span>改进</li>
+            <li><span class="step-no">05</span>复评</li>
+          </ol>
+          <p class="loop-back">⟲ 复评结果回流至「指标」，循环运转</p>
+          <p class="vis-cap">文字等价：指标 → 漏出分类 → 根因 → 改进 → 复评，复评结果回流指标定义，形成闭环。</p>
+
+          <p class="vis-title">表 3-1 ｜ 漏出原因 → 改进动作映射</p>
+          <table class="data-table">
+            <thead>
+              <tr><th scope="col">常见漏出原因</th><th scope="col">对应改进动作</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">测试点不清晰</th><td data-col="对应改进动作">优化用例设计，明确测试点与判定依据。</td></tr>
+              <tr><th scope="row">无用例覆盖</th><td data-col="对应改进动作">分析测试方法，补充边界场景用例。</td></tr>
+              <tr><th scope="row">设备资源缺口</th><td data-col="对应改进动作">提前申请与跟踪测试设备、车辆资源，纳入调度。</td></tr>
+              <tr><th scope="row">执行时间不足</th><td data-col="对应改进动作">提升自动化覆盖率，以并行执行加快验证速度。</td></tr>
+              <tr><th scope="row">偶现问题</th><td data-col="对应改进动作">对开关机、显示异常、卡死等场景做自动化压测。</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <dl class="facts">
+          <div class="fact f-out"><dt>结果</dt><dd>所负责范围的漏测率保持长期改善趋势，累计降幅 <b class="mask">**%</b>。</dd></div>
+          <div class="fact"><dt>复盘</dt><dd>指标只有绑定「分类 → 动作 → 复评」才是治理工具；脱离闭环的指标只是报表。</dd></div>
+          <div class="fact f-own"><dt>主导角色</dt><dd><span class="own-tag own-lead">个人主导</span> 指标体系与闭环机制；<span class="own-tag own-core">核心参与</span> 数据治理工具为团队共建成果。</dd></div>
+        </dl>
+      </article>
+
+      <article class="case" id="case-c" aria-labelledby="h-case-c">
+        <h3 id="h-case-c"><span class="case-no">案例 C</span>AI 辅助测试设计与质量审计</h3>
+        <dl class="facts">
+          <div class="fact"><dt>背景</dt><dd>需求、历史缺陷与法规条款分散，人工检索慢且易漏边界场景；对账与审计类工作高度重复。</dd></div>
+          <div class="fact f-risk"><dt>约束</dt><dd>模型输出不可全信，质量责任不能外包给 AI；数据处理须在允许边界内进行。</dd></div>
+          <div class="fact"><dt>诊断</dt><dd>按任务性质拆分「可委托」与「必须留人」：解析、召回、比对、生成、标记可交给机器；边界确认、修订与准入必须由人完成。</dd></div>
+          <div class="fact f-act"><dt>干预</dt><dd>构建机—人双泳道协作（见图 3-4）：机器完成解析、召回、比对、生成与风险标记，低置信度产物自动回退人工；人完成边界确认、修订与「放行 / 补充 / 驳回」的准入决策。</dd></div>
+        </dl>
+        <div class="case-figures">
+          <p class="vis-title">图 3-4 ｜ 机—人协作双泳道</p>
+          <figure class="swimlane">
+            <div class="lane lane-machine">
+              <span class="lane-tag">机器泳道 · 可委托</span>
+              <ol aria-label="机器泳道步骤，按序：需求解析、历史缺陷召回、法规条款召回、差异比对、用例与材料生成、风险标记">
+                <li>需求解析</li>
+                <li>历史缺陷召回</li>
+                <li>法规条款召回</li>
+                <li>差异比对</li>
+                <li>用例与材料生成</li>
+                <li>风险标记</li>
+              </ol>
+            </div>
+            <p class="handoff">↑ 产物与风险标记上交 ｜ 修订与确认意见下回 ↓ ｜ 低置信度自动回退人工</p>
+            <div class="lane lane-human">
+              <span class="lane-tag">人工泳道 · 必须留人</span>
+              <ol aria-label="人工泳道步骤，按序：边界确认、修订、准入决策（放行、补充、驳回）">
+                <li>边界确认</li>
+                <li>修订</li>
+                <li>准入决策（放行 / 补充 / 驳回）</li>
+              </ol>
+            </div>
+          </figure>
+          <p class="vis-cap">文字等价：机器按序执行 需求解析 → 历史缺陷召回 → 法规条款召回 → 差异比对 → 用例与材料生成 → 风险标记；产物交人工 边界确认 → 修订 → 准入决策；准入决策仅由人做出。</p>
+        </div>
+        <dl class="facts">
+          <div class="fact f-out"><dt>结果</dt><dd>用例设计与审计准备耗时下降 <b class="mask">**%</b>，版本准入材料可自动预生成并经人工确认后使用。</dd></div>
+          <div class="fact"><dt>复盘</dt><dd>AI 的价值在于把人从检索与比对中解放出来，而不是替代判断；落地效果更多取决于边界设计，而非模型能力本身。</dd></div>
+          <div class="fact f-own"><dt>主导角色</dt><dd><span class="own-tag own-team">团队成果 · 核心参与</span> 测试用例智能生成与质量审计链为团队阶段性共建；<span class="own-tag own-lead">个人主导</span> 缺陷处理 SOP 与自动提交流程。</dd></div>
+        </dl>
+      </article>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 04 技术深潜 -->
+  <section class="chapter" id="tech" aria-labelledby="h-tech">
+    <header class="ch-head">
+      <div class="ch-gutter">
+        <span class="ch-no" aria-hidden="true">04</span>
+        <span class="ch-note">SEC. 04 · TECHNICAL DEPTH</span>
+      </div>
+      <div class="ch-titling">
+        <p class="ch-kicker">技术深潜 · TECHNICAL DEPTH</p>
+        <h2 id="h-tech">四个测试难题：问题 → 工程方法 → 可复用资产</h2>
+        <p class="ch-lead">资产是否被复用，是技术工作是否完成的判据。以下每项都按同一结构记录，不罗列工具名。</p>
+      </div>
+    </header>
+    <div class="ch-body">
+      <table class="data-table">
+        <thead>
+          <tr><th scope="col">方向</th><th scope="col">问题</th><th scope="col">工程方法</th><th scope="col">可复用资产</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">音画同步检测</th>
+            <td data-col="问题">音画时序偏差人耳难以量化，人工判定不可重复。</td>
+            <td data-col="工程方法">区域抓取 + 音轨与画面特征对齐 + 阈值分档判定。</td>
+            <td data-col="可复用资产">可复用的同步检测方法与判定规则，已沉淀为专利申请与软件著作权。</td>
+          </tr>
+          <tr>
+            <th scope="row">音频比对</th>
+            <td data-col="问题">主观音质评价波动大，跨版本无法对齐比较。</td>
+            <td data-col="工程方法">信号级特征提取与逐段比对，输出分档结论与差异证据。</td>
+            <td data-col="可复用资产">自动化音频比对方法，替代纯主观评价，支撑跨版本回归。</td>
+          </tr>
+          <tr>
+            <th scope="row">设备与资源控制</th>
+            <td data-col="问题">多设备并发控制不稳定，资源争用导致流水线阻塞。</td>
+            <td data-col="工程方法">设备抽象与统一调度，配套复位与兜底策略。</td>
+            <td data-col="可复用资产">资源调度与复位规范，成为无人值守稳定运行的前提。</td>
+          </tr>
+          <tr>
+            <th scope="row">多语种与 RTL 视觉质量</th>
+            <td data-col="问题">小语种字符错误、语义断句与 RTL 错位、遮挡、溢出，人工识别不稳定。</td>
+            <td data-col="工程方法">区域抓取 → 字符识别与翻译比对 → 错位 / 遮挡 / 溢出检测的链路化处理。</td>
+            <td data-col="可复用资产">可复用的视觉质检链路，把重复性感知任务交给 AI。</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 05 影响力放大 -->
+  <section class="chapter" id="leverage" aria-labelledby="h-leverage">
+    <header class="ch-head">
+      <div class="ch-gutter">
+        <span class="ch-no" aria-hidden="true">05</span>
+        <span class="ch-note">SEC. 05 · LEVERAGE</span>
+      </div>
+      <div class="ch-titling">
+        <p class="ch-kicker">影响力放大 · LEVERAGE</p>
+        <h2 id="h-leverage">从个人经验到团队默认做法</h2>
+        <p class="ch-lead">个人经验经「学习 → 验证 → 文档 → 培训 → 团队复用」的路径转化为团队能力。下表逐项标注归属：团队成果不作为个人独立产出表述。</p>
+      </div>
+    </header>
+    <div class="ch-body">
+      <p class="vis-title">转化路径 · TRANSFER CHAIN</p>
+      <ol class="flow" aria-label="经验转化五个环节，按顺序">
+        <li><span class="step-no">01</span>学习<small>快速进入新领域</small></li>
+        <li><span class="step-no">02</span>验证<small>形成可检验的判定</small></li>
+        <li><span class="step-no">03</span>文档<small>沉淀为规范与 SOP</small></li>
+        <li><span class="step-no">04</span>培训<small>面向团队传导</small></li>
+        <li><span class="step-no">05</span>团队复用<small>成为默认做法</small></li>
+      </ol>
+      <p class="vis-cap">文字等价：学习 → 验证 → 文档 → 培训 → 团队复用；缺任何一环，经验都不能算转化为团队能力。</p>
+
+      <p class="vis-title">沉淀台账 · TRANSFER LEDGER</p>
+      <table class="data-table">
+        <thead>
+          <tr><th scope="col">沉淀物</th><th scope="col">转化路径</th><th scope="col">团队中的去向</th><th scope="col">归属</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">音画同步与图像识别检测方法</th>
+            <td data-col="转化路径">技术攻关 → 方法规范 → 培训材料</td>
+            <td data-col="团队中的去向">团队培训课程与专利、软件著作权沉淀</td>
+            <td data-col="归属"><span class="own-tag own-lead">个人主导</span></td>
+          </tr>
+          <tr>
+            <th scope="row">漏测治理指标与闭环机制</th>
+            <td data-col="转化路径">机制设计 → 周期复评</td>
+            <td data-col="团队中的去向">团队例行治理动作</td>
+            <td data-col="归属"><span class="own-tag own-lead">个人主导</span></td>
+          </tr>
+          <tr>
+            <th scope="row">七步流水线与调度复位规范</th>
+            <td data-col="转化路径">流水线化 → 多项目接入</td>
+            <td data-col="团队中的去向">平台默认执行路径</td>
+            <td data-col="归属"><span class="own-tag own-lead">个人主导</span>（平台核心能力为团队协作）</td>
+          </tr>
+          <tr>
+            <th scope="row">缺陷处理 SOP 与自动提交</th>
+            <td data-col="转化路径">经验规则化 → 技能化</td>
+            <td data-col="团队中的去向">共享技能库的起点场景</td>
+            <td data-col="归属"><span class="own-tag own-lead">个人主导</span>（技能库为团队共建）</td>
+          </tr>
+          <tr>
+            <th scope="row">测试用例智能生成</th>
+            <td data-col="转化路径">策略设计 → 阶段共建</td>
+            <td data-col="团队中的去向">团队设计辅助能力</td>
+            <td data-col="归属"><span class="own-tag own-team">团队成果 · 核心参与</span></td>
+          </tr>
+          <tr>
+            <th scope="row">质量审计链</th>
+            <td data-col="转化路径">流程设计 → 留证落地</td>
+            <td data-col="团队中的去向">可追踪的审计实践</td>
+            <td data-col="归属"><span class="own-tag own-team">团队成果 · 核心参与</span></td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="legend">归属说明：<span class="own-tag own-lead">个人主导</span> = 由本人提出并主责推进；<span class="own-tag own-core">核心参与</span> = 本人深度参与设计与实现；<span class="own-tag own-team">团队成果</span> = 团队协作产出，本人为主要参与者之一。</p>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 06 能力矩阵与工作原则 -->
+  <section class="chapter" id="capability" aria-labelledby="h-capability">
+    <header class="ch-head">
+      <div class="ch-gutter">
+        <span class="ch-no" aria-hidden="true">06</span>
+        <span class="ch-note">SEC. 06 · MATRIX &amp; PRINCIPLES</span>
+      </div>
+      <div class="ch-titling">
+        <p class="ch-kicker">能力与原则 · MATRIX &amp; PRINCIPLES</p>
+        <h2 id="h-capability">能力矩阵与工作原则</h2>
+        <p class="ch-lead">能力矩阵不以评分呈现，只给出可核验的行为证据短语。</p>
+      </div>
+    </header>
+    <div class="ch-body">
+      <p class="vis-title">能力矩阵 · CAPABILITY MATRIX（行为证据，非评分）</p>
+      <table class="data-table">
+        <thead>
+          <tr><th scope="col">能力域</th><th scope="col">诊断</th><th scope="col">设计</th><th scope="col">交付</th><th scope="col">规模化</th><th scope="col">治理</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">测试策略</th>
+            <td data-col="诊断">从漏出数据反推盲区与优先级。</td>
+            <td data-col="设计">以漏测率为靶心制定测试策略。</td>
+            <td data-col="交付">输出可执行的测试方案与准出标准。</td>
+            <td data-col="规模化">策略随自动化成熟度分阶段演进。</td>
+            <td data-col="治理">以周期复评修正策略偏差。</td>
+          </tr>
+          <tr>
+            <th scope="row">测试自动化</th>
+            <td data-col="诊断">识别人工环节中的衔接损耗。</td>
+            <td data-col="设计">七步流水线与成熟度路径。</td>
+            <td data-col="交付">无人值守流水线落地运行。</td>
+            <td data-col="规模化">多项目接入共享执行能力。</td>
+            <td data-col="治理">失败兜底与证据完整性约束。</td>
+          </tr>
+          <tr>
+            <th scope="row">平台架构</th>
+            <td data-col="诊断">从环境复位与资源争用定位稳定性瓶颈。</td>
+            <td data-col="设计">平台保底座、项目留扩展。</td>
+            <td data-col="交付">设备调度与复位组件可用可运维。</td>
+            <td data-col="规模化">服务化自助触发、按需编排。</td>
+            <td data-col="治理">共享服务的使用边界与责任约定。</td>
+          </tr>
+          <tr>
+            <th scope="row">质量度量</th>
+            <td data-col="诊断">区分指标噪音与真实趋势。</td>
+            <td data-col="设计">漏测率口径与原因分类体系。</td>
+            <td data-col="交付">指标视图与复评机制运转。</td>
+            <td data-col="规模化">原因—动作映射复用于多类问题。</td>
+            <td data-col="治理">防刷分：绑定分类与复评。</td>
+          </tr>
+          <tr>
+            <th scope="row">AI 工程</th>
+            <td data-col="诊断">识别可委托与须人来的任务边界。</td>
+            <td data-col="设计">机—人双泳道与置信度回退。</td>
+            <td data-col="交付">召回—生成—标记链路落地。</td>
+            <td data-col="规模化">共享技能库按需组合复用。</td>
+            <td data-col="治理">人工门禁与审计留证不可绕过。</td>
+          </tr>
+          <tr>
+            <th scope="row">组织与团队</th>
+            <td data-col="诊断">识别经验断点与重复踩坑点。</td>
+            <td data-col="设计">学习—验证—文档—培训路径。</td>
+            <td data-col="交付">培训课程与规范文档可用。</td>
+            <td data-col="规模化">团队按文档自助承接与迭代。</td>
+            <td data-col="治理">归属清晰：主导与共建分账。</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="vis-title">工作原则 · OPERATING PRINCIPLES</p>
+      <ol class="principles">
+        <li><span class="p-no">01</span><span><b>先定靶心，再谈提效。</b><span class="p-desc">没有指标方向的优化只是忙碌。</span></span></li>
+        <li><span class="p-no">02</span><span><b>让系统承接重复，把人留在判断与责任边界上。</b><span class="p-desc">自动化替代的是动作，不是责任。</span></span></li>
+        <li><span class="p-no">03</span><span><b>经验不沉淀就是损耗。</b><span class="p-desc">学习、验证、文档、复用，缺一环都不算能力。</span></span></li>
+        <li><span class="p-no">04</span><span><b>无人值守的前提是可复位。</b><span class="p-desc">工程兜底先于效率承诺。</span></span></li>
+        <li><span class="p-no">05</span><span><b>AI 负责召回与生成，人负责确认与准入。</b><span class="p-desc">边界设计比模型能力更关键。</span></span></li>
+        <li><span class="p-no">06</span><span><b>可复用才算能力，只用一次只是操作。</b><span class="p-desc">以「他人能否自助使用」验收技术工作。</span></span></li>
+      </ol>
+
+      <p class="closing">本卷宗为公开脱敏版本的阶段性总结：只陈述方向、口径与方法，不代表任何组织的承诺或结论。完整细节不对外提供；如需了解或核实，请通过适当渠道与本人联系。</p>
     </div>
   </section>
 </main>
 
-<footer>
-  <div class="footer-inner">
-    <span>蔡伟 · 个人简介（公开脱敏版）</span>
-    <span>质量工程 / 测试自动化 / AI 质量实践</span>
-    <span>更新于 2026-09</span>
+<footer id="notice">
+  <div class="foot-inner">
+    <h2>脱敏声明</h2>
+    <ul class="foot-list">
+      <li>本页由内部完整工作总结删节整理而成；现任企业、组织与部门名称已泛化，项目、产品与工具代号已移除。</li>
+      <li>业务数值、团队与人员规模、成本预算、席位与供应商信息不呈现；经历与成果为方向性描述。</li>
+      <li>文中 <b class="mask">**</b> 为脱敏占位符，仅保留指标类型、变化方向与度量口径，不代表零，也不代表数据缺失。</li>
+      <li>纯静态页面：无外部资源、无脚本依赖、无访问统计；已设置 noindex, nofollow。</li>
+    </ul>
+    <p class="foot-colophon">蔡伟 · 个人简历（公开脱敏版） ｜ 质量工程 / 测试自动化 / AI 质量实践 ｜ 更新于 2026-09</p>
   </div>
 </footer>
 </body>
