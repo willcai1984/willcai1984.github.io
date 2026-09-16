@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="description" content="蔡伟 · 测试高级经理 / 测试专家 个人简介（公开脱敏版）：质量工程、测试自动化与 AI 质量实践。">
+<title>蔡伟 · 个人简介（公开脱敏版）</title>
+<style>
+  :root {
+    --bg: #0a0f1e;
+    --bg-soft: #0d1426;
+    --surface: #111a30;
+    --surface-2: #15203a;
+    --border: rgba(148, 163, 184, 0.16);
+    --border-strong: rgba(148, 163, 184, 0.28);
+    --text: #e7edfb;
+    --muted: #9aa8c7;
+    --faint: #6b7a9c;
+    --accent: #5eead4;
+    --accent-2: #60a5fa;
+    --amber: #fbbf24;
+    --grad: linear-gradient(96deg, #5eead4 0%, #60a5fa 100%);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+    line-height: 1.75;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: rgba(94, 234, 212, 0.28); }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  :focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; border-radius: 4px; }
+  .skip {
+    position: absolute; left: -9999px; top: 0; background: var(--surface-2);
+    padding: 8px 14px; border-radius: 8px; z-index: 99;
+  }
+  .skip:focus { left: 12px; top: 12px; }
+
+  /* ---------- top nav ---------- */
+  .topbar {
+    position: sticky; top: 0; z-index: 50;
+    background: rgba(10, 15, 30, 0.82);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .topbar-inner {
+    max-width: 1080px; margin: 0 auto; padding: 12px 24px;
+    display: flex; align-items: center; gap: 20px;
+  }
+  .brand { font-weight: 700; letter-spacing: 0.02em; white-space: nowrap; }
+  .brand small { color: var(--faint); font-weight: 500; margin-left: 8px; }
+  nav.links { margin-left: auto; display: flex; gap: 4px; overflow-x: auto; scrollbar-width: none; }
+  nav.links::-webkit-scrollbar { display: none; }
+  nav.links a {
+    color: var(--muted); font-size: 14px; padding: 6px 12px; border-radius: 999px;
+    white-space: nowrap;
+  }
+  nav.links a:hover { color: var(--text); background: var(--surface); text-decoration: none; }
+
+  /* ---------- hero ---------- */
+  .hero {
+    position: relative; overflow: hidden;
+    background:
+      radial-gradient(720px 340px at 82% -10%, rgba(96, 165, 250, 0.16), transparent 60%),
+      radial-gradient(560px 300px at 12% 110%, rgba(94, 234, 212, 0.10), transparent 60%),
+      var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .hero-inner { max-width: 1080px; margin: 0 auto; padding: 84px 24px 72px; }
+  .kicker {
+    font-size: 13px; letter-spacing: 0.22em; color: var(--accent);
+    text-transform: uppercase; margin-bottom: 18px;
+  }
+  .hero h1 {
+    font-size: clamp(40px, 7vw, 60px); line-height: 1.15; letter-spacing: 0.02em;
+  }
+  .hero .role {
+    margin-top: 14px; font-size: clamp(18px, 3vw, 24px); font-weight: 600;
+    background: var(--grad);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+    width: fit-content;
+  }
+  .hero .tagline { margin-top: 16px; color: var(--muted); font-size: 17px; max-width: 46em; }
+  .hero-tags { margin-top: 26px; display: flex; flex-wrap: wrap; gap: 10px; }
+  .chip {
+    font-size: 13.5px; color: var(--muted);
+    border: 1px solid var(--border-strong); border-radius: 999px;
+    padding: 6px 14px; background: rgba(17, 26, 48, 0.6);
+  }
+  .chip b { color: var(--text); font-weight: 600; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 8px;
+    margin-top: 30px; padding: 9px 16px; border-radius: 10px;
+    border: 1px solid rgba(251, 191, 36, 0.35);
+    background: rgba(251, 191, 36, 0.08);
+    color: var(--amber); font-size: 14px;
+  }
+  .badge a { color: var(--amber); text-decoration: underline; text-underline-offset: 3px; }
+
+  /* ---------- layout ---------- */
+  main { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+  section { padding: 64px 0 8px; }
+  .sec-kicker {
+    font-size: 12.5px; letter-spacing: 0.2em; color: var(--accent);
+    text-transform: uppercase; margin-bottom: 10px;
+  }
+  h2 { font-size: clamp(24px, 3.6vw, 32px); line-height: 1.3; letter-spacing: 0.01em; }
+  .sec-lead { color: var(--muted); margin-top: 12px; max-width: 52em; }
+  .divider { border: 0; border-top: 1px solid var(--border); margin: 56px 0 0; }
+
+  .grid { display: grid; gap: 18px; margin-top: 30px; }
+  .grid-2 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(3, 1fr); }
+  .card {
+    background: linear-gradient(180deg, var(--surface) 0%, var(--bg-soft) 100%);
+    border: 1px solid var(--border); border-radius: 14px; padding: 22px 22px 20px;
+    transition: transform 0.18s ease, border-color 0.18s ease;
+  }
+  .card:hover { transform: translateY(-2px); border-color: var(--border-strong); }
+  .card h3 { font-size: 17px; margin-bottom: 10px; }
+  .card h3 .no {
+    display: inline-block; font-size: 12px; color: var(--accent); letter-spacing: 0.14em;
+    margin-right: 8px; vertical-align: 2px;
+  }
+  .card p { color: var(--muted); font-size: 14.5px; }
+  .card ul { list-style: none; margin-top: 8px; }
+  .card li {
+    color: var(--muted); font-size: 14.5px; padding: 5px 0 5px 18px; position: relative;
+  }
+  .card li::before {
+    content: ""; position: absolute; left: 2px; top: 14px;
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--accent); opacity: 0.8;
+  }
+  .card li b, .card p b { color: var(--text); font-weight: 600; }
+  .note {
+    margin-top: 22px; color: var(--faint); font-size: 13.5px;
+    border-left: 2px solid var(--border-strong); padding-left: 14px;
+  }
+
+  /* flow steps */
+  .flow { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-top: 22px; }
+  .step {
+    background: var(--surface-2); border: 1px solid var(--border);
+    border-radius: 10px; padding: 8px 14px; font-size: 14px; color: var(--text);
+    white-space: nowrap;
+  }
+  .step small { display: block; color: var(--faint); font-size: 12px; }
+  .arrow { color: var(--faint); font-size: 15px; }
+
+  /* timeline */
+  .timeline { margin-top: 30px; position: relative; padding-left: 26px; }
+  .timeline::before {
+    content: ""; position: absolute; left: 7px; top: 8px; bottom: 8px;
+    width: 2px; background: linear-gradient(180deg, var(--accent), var(--accent-2));
+    opacity: 0.35; border-radius: 2px;
+  }
+  .t-item { position: relative; padding: 0 0 26px 14px; }
+  .t-item:last-child { padding-bottom: 4px; }
+  .t-item::before {
+    content: ""; position: absolute; left: -26px; top: 9px;
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--bg); border: 3px solid var(--accent);
+  }
+  .t-range { font-size: 13px; color: var(--faint); letter-spacing: 0.06em; }
+  .t-item h3 { font-size: 17px; margin: 2px 0 4px; }
+  .t-item h3 em { font-style: normal; font-size: 14px; color: var(--accent); margin-left: 10px; }
+  .t-item p { color: var(--muted); font-size: 14.5px; max-width: 56em; }
+
+  /* skills */
+  .skills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+  .skills .chip { font-size: 14px; padding: 8px 16px; color: var(--text); background: var(--surface); }
+
+  /* notice */
+  .notice-box {
+    margin-top: 30px; border: 1px solid rgba(251, 191, 36, 0.35);
+    background: rgba(251, 191, 36, 0.06); border-radius: 14px; padding: 24px 26px;
+  }
+  .notice-box h3 { color: var(--amber); font-size: 16px; margin-bottom: 12px; }
+  .notice-box ul { list-style: none; }
+  .notice-box li { color: var(--muted); font-size: 14.5px; padding: 4px 0 4px 20px; position: relative; }
+  .notice-box li::before { content: "—"; position: absolute; left: 0; color: var(--amber); }
+
+  footer {
+    border-top: 1px solid var(--border); margin-top: 72px;
+    background: var(--bg-soft);
+  }
+  .footer-inner {
+    max-width: 1080px; margin: 0 auto; padding: 30px 24px 40px;
+    color: var(--faint); font-size: 13.5px;
+    display: flex; flex-wrap: wrap; gap: 10px 26px; justify-content: space-between;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 900px) {
+    .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 620px) {
+    .hero-inner { padding: 60px 20px 52px; }
+    main { padding: 0 20px; }
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    section { padding: 48px 0 4px; }
+    .topbar-inner { padding: 10px 16px; gap: 12px; }
+    .brand small { display: none; }
+    nav.links a { padding: 6px 10px; }
+    .card { padding: 18px; }
+  }
+  @media print {
+    .topbar { display: none; }
+    body { background: #fff; color: #111; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要内容</a>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">蔡伟<small>个人简介 · 公开脱敏版</small></div>
+    <nav class="links" aria-label="页面导航">
+      <a href="#about">简介</a>
+      <a href="#career">经历</a>
+      <a href="#method">方法论</a>
+      <a href="#automation">测试自动化</a>
+      <a href="#quality">质量治理</a>
+      <a href="#ai">AI 实践</a>
+      <a href="#stewardship">资源治理</a>
+      <a href="#skills">能力总览</a>
+      <a href="#notice">脱敏说明</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <p class="kicker">Personal Profile · Quality Engineering &amp; AI</p>
+    <h1>蔡伟</h1>
+    <p class="role">测试高级经理 &amp; 测试专家</p>
+    <p class="tagline">
+      17 年测试开发与质量管理经验，覆盖电信、网络设备、互联网与智能汽车行业。
+      近年聚焦智能座舱平台测试体系建设、大规模测试自动化与 AI 质量工程实践，
+      持续把个人经验沉淀为团队可复用的工程能力。
+    </p>
+    <div class="hero-tags">
+      <span class="chip"><b>测试策略与体系</b></span>
+      <span class="chip"><b>测试自动化平台</b></span>
+      <span class="chip"><b>AI 质量工程</b></span>
+      <span class="chip"><b>质量度量与治理</b></span>
+      <span class="chip"><b>团队建设</b></span>
+    </div>
+    <p class="badge">公开脱敏版本：企业与内部信息已移除或泛化，详见<a href="#notice">脱敏说明</a>。</p>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- 01 简介 -->
+  <section id="about" aria-labelledby="h-about">
+    <p class="sec-kicker">01 · Profile</p>
+    <h2 id="h-about">个人简介</h2>
+    <p class="sec-lead">
+      从测试开发工程师成长为测试专家与团队管理者，经历了电信、网络设备、互联网科技与智能汽车等多个领域。
+      现就职于一家智能出行领域科技企业，负责平台级测试业务与团队管理，主导测试自动化体系与
+      AI 质量工程实践，在交付范围扩大、资源收紧的约束下，持续以「提升单位投入产出」为主线推动改进。
+    </p>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3><span class="no">A</span>工程与业务并重</h3>
+        <p>既深入测试技术细节（图像、音频、设备控制、流水线工程），也关注业务目标与质量判断，
+           把技术方案落到可度量的交付结果上。</p>
+      </div>
+      <div class="card">
+        <h3><span class="no">B</span>经验到能力的转化</h3>
+        <p>坚持「学习 → 验证 → 沉淀」：先快速进入新领域形成验证能力，再通过工具、文档与培训
+           把个人所学转化为团队可复用资产。</p>
+      </div>
+      <div class="card">
+        <h3><span class="no">C</span>拥抱变化</h3>
+        <p>以「会、好、快」回应质疑与变化：快速学习陌生领域、保证质量底线、
+           用自动化与持续集成不断缩短交付周期。</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 02 经历 -->
+  <section id="career" aria-labelledby="h-career">
+    <p class="sec-kicker">02 · Career</p>
+    <h2 id="h-career">教育与职业经历</h2>
+    <p class="sec-lead">现任企业按脱敏要求做泛化表述，其余经历按公开简历惯例保留。</p>
+    <div class="timeline">
+      <div class="t-item">
+        <div class="t-range">2002.09 — 2009.06</div>
+        <h3>西安电子科技大学<em>本硕</em></h3>
+        <p>电子信息科学与技术（本科）；无线电物理 · 光学方向（硕士）。</p>
+      </div>
+      <div class="t-item">
+        <div class="t-range">2009.09 — 2011.03</div>
+        <h3>UTStarcom<em>测试开发工程师</em></h3>
+        <p>通信领域测试开发起步，积累测试脚本、工具与流程基础。</p>
+      </div>
+      <div class="t-item">
+        <div class="t-range">2011.03 — 2015.03</div>
+        <h3>Aerohive Networks<em>测试开发 Leader</em></h3>
+        <p>网络设备领域带领测试开发工作，负责自动化框架与团队协作。</p>
+      </div>
+      <div class="t-item">
+        <div class="t-range">2015.03 — 2020.06</div>
+        <h3>仟金顶网络科技有限公司<em>产品技术总监</em></h3>
+        <p>互联网科技领域产品与技术管理，拓宽了从测试视角之外理解研发全链路的能力。</p>
+      </div>
+      <div class="t-item">
+        <div class="t-range">2020.07 — 至今</div>
+        <h3>某智能出行领域科技企业<em>测试高级经理 &amp; 测试专家</em></h3>
+        <p>从组件与应用测试，到计算平台底座测试，再到跨项目的自动化与 AI 能力建设；
+           职责覆盖平台交付、质量判断与测试体系建设，并主导智能化质量工具的落地。</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 03 方法论 -->
+  <section id="method" aria-labelledby="h-method">
+    <p class="sec-kicker">03 · Methodology</p>
+    <h2 id="h-method">方法论：把经验变成可复用的工程能力</h2>
+    <p class="sec-lead">
+      提效的路径是渐进的：先把个人经验梳理为规则，再把规则沉淀为工具，
+      AI 在其中加速「经验 → 工具」的转化；人始终负责规则有效性、关键判断与质量责任。
+    </p>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3><span class="no">01</span>人治 · 经验驱动</h3>
+        <p>梳理个人经验：识别输入、输出与判断依据，从现场问题中定位瓶颈。</p>
+      </div>
+      <div class="card">
+        <h3><span class="no">02</span>法治 · 规则驱动</h3>
+        <p>把做法沉淀为可执行的 SOP 与判定规则，让相同问题可以被重复、一致地处理。</p>
+      </div>
+      <div class="card">
+        <h3><span class="no">03</span>自动化 · 工具驱动</h3>
+        <p>以规则为基础沉淀脚本、流程与工具，把重复动作交给系统执行，AI 辅助梳理规则、
+           生成工具与持续维护。</p>
+      </div>
+    </div>
+    <div class="flow" aria-label="目标闭环">
+      <span class="step">业务目标</span><span class="arrow">→</span>
+      <span class="step">发现问题</span><span class="arrow">→</span>
+      <span class="step">结合 AI 解决问题</span><span class="arrow">→</span>
+      <span class="step">验证效果</span><span class="arrow">→</span>
+      <span class="step">沉淀方法与经验</span><span class="arrow">⟳</span>
+    </div>
+    <p class="note">以终为始，持续迭代回到业务目标；工具需经验证后投入使用，复杂架构与安全治理仍需专业支持。</p>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 04 测试自动化 -->
+  <section id="automation" aria-labelledby="h-automation">
+    <p class="sec-kicker">04 · Test Automation</p>
+    <h2 id="h-automation">测试自动化与平台建设</h2>
+    <p class="sec-lead">
+      从主导无人值守自动化流水线起步，到参与大规模持续测试平台的核心建设：
+      让系统承接重复执行，人保留异常复核与准出决策。
+    </p>
+
+    <div class="grid grid-2">
+      <div class="card">
+        <h3><span class="no">01</span>无人值守自动化流水线</h3>
+        <p>主导建设覆盖版本获取、环境准备、执行验证与结果回传的全流程自动化流水线，
+           打通平台级持续运行能力，明显减少手工准备、持续盯守与证据整理工作。</p>
+      </div>
+      <div class="card">
+        <h3><span class="no">02</span>规模化持续测试平台</h3>
+        <p>参与平台核心建设与服务化演进：需求方可自助触发并获取测试服务，
+           测试负责人能够以较低依赖调整场景逻辑；工具逐步走出测试团队，
+           支持项目经理、研发等角色自助使用。</p>
+      </div>
+      <div class="card">
+        <h3><span class="no">03</span>关键测试技术方向</h3>
+        <p>围绕图像识别与音画同步、音频比对、设备与资源控制等真实测试难点开展技术攻关，
+           形成可复用的测试方法，并将相关成果沉淀为专利申请与软件著作权。</p>
+      </div>
+      <div class="card">
+        <h3><span class="no">04</span>方法与规范沉淀</h3>
+        <p>把平台建设经验整理为可复用的流程与规范，通过文档与培训在团队内推广，
+           让自动化能力能够被团队持续承接与迭代。</p>
+      </div>
+    </div>
+    <p class="note">本页不呈现具体业务规模与运营数据；相关工作经历均为定性描述。</p>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 05 质量治理 -->
+  <section id="quality" aria-labelledby="h-quality">
+    <p class="sec-kicker">05 · Quality Governance</p>
+    <h2 id="h-quality">以质量治理守住边界</h2>
+    <p class="sec-lead">
+      把主观的质量判断转化为指标、改进动作和验收证据，效率提升才有明确方向：
+      先定义指标，再用漏出原因反推测试盲区，最后以工具支撑分析与行动闭环。
+    </p>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3><span class="no">01</span>指标定义：漏测率</h3>
+        <p>漏测率 = 外部反馈故障分 ÷ 内部发现故障分。减少外部反馈、增加内部发现，
+           即可降低漏测率；指标方向明确后，测试左移与提效动作都有了统一靶心。</p>
+        <div class="flow">
+          <span class="step">漏出原因分析</span><span class="arrow">→</span>
+          <span class="step">行动计划</span><span class="arrow">→</span>
+          <span class="step">指标复评</span><span class="arrow">⟳</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3><span class="no">02</span>漏出原因 → 改进动作</h3>
+        <ul>
+          <li>测试点不清晰 → 优化用例，明确测试点</li>
+          <li>无用例覆盖 → 分析测试方法，补充用例</li>
+          <li>设备资源缺口 → 提前申请与跟踪实车、设备资源</li>
+          <li>执行时间不足 → 提升自动化覆盖率，加快验证速度</li>
+          <li>偶现问题 → 对开关机、显示异常、卡死等场景自动化压测</li>
+        </ul>
+      </div>
+    </div>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3><span class="no">03</span>早期实践</h3>
+        <p>通过指标牵引与漏出原因闭环，持续补齐用例、明确测试点、加强薄弱场景验证，
+           推动所负责范围的漏测率指标长期保持改善趋势。</p>
+      </div>
+      <div class="card">
+        <h3><span class="no">04</span>工具化治理</h3>
+        <p>针对数据反复拉取、结论难复用、行动难跟踪的问题，引入工作流自动化做数据同步与
+           结构化治理，让分析结论与改进行动能够持续闭环运转。</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 06 AI 实践 -->
+  <section id="ai" aria-labelledby="h-ai">
+    <p class="sec-kicker">06 · AI in Quality</p>
+    <h2 id="h-ai">AI 质量工程实践</h2>
+    <p class="sec-lead">
+      AI 不只用于执行与分析，而是前移到测试设计与版本准入：检索、召回与生成交给机器，
+      确认与放行留给人。策略边界清晰——AI 负责理解、召回与生成；测试人员负责确认、修订与准入。
+    </p>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3><span class="no">A</span>多语种视觉检查</h3>
+        <p>面对小语种与 RTL 布局等场景，人工难以稳定识别字符错误、语义断句与界面异常。
+           以「区域抓取 → 字符识别与翻译比对 → 错位、遮挡与溢出检测」的链路切入，
+           把重复性感知任务交给 AI，在真实业务问题中验证其应用价值。</p>
+      </div>
+      <div class="card">
+        <h3><span class="no">B</span>测试用例智能生成</h3>
+        <p>需求、历史缺陷与法规标准分散，人工检索慢且易遗漏边界场景。
+           解析需求并召回历史缺陷与法规条款，自动生成测试步骤与预期结果；
+           人工确认场景边界与预期，低置信度内容回退人工补充。
+           该方向为团队阶段性共建成果，非个人独立产出。</p>
+      </div>
+      <div class="card">
+        <h3><span class="no">C</span>版本准入门禁</h3>
+        <p>对齐提交记录与版本说明，自动生成风险对齐材料、影响面与测试建议，
+           形成可人工确认的门禁材料，支撑「放行 / 补充 / 驳回」的准入决策，
+           把问题拦截在执行开始之前。</p>
+      </div>
+      <div class="card">
+        <h3><span class="no">D</span>缺陷处理闭环</h3>
+        <p>把缺陷处理经验沉淀为覆盖识别、判定、提交与跟进环节的标准作业流程；
+           在此之上实现自动分析与整理、辅助提交与状态推进，
+           人工守住提交质量与异常处理。</p>
+      </div>
+      <div class="card">
+        <h3><span class="no">E</span>共享技能库</h3>
+        <p>从缺陷提交场景的个人技能起步，经团队共建形成统一调用、按需组合的共享技能库，
+           并向缺陷验复、报告生成等共性场景拓展，让一个项目的沉淀能够在多个项目复用。</p>
+      </div>
+      <div class="card">
+        <h3><span class="no">F</span>质量过程审计链</h3>
+        <p>数据连接 → 规则执行 → 异常汇总 → 证据保存 → 人工审批，形成可追踪的审计链；
+           系统完成连接、执行、汇总与留证，人员负责规则确认与审批决策。
+           该能力为团队协作成果。</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 07 负责任的 AI 资源管理 -->
+  <section id="stewardship" aria-labelledby="h-stewardship">
+    <p class="sec-kicker">07 · Responsible AI Use</p>
+    <h2 id="h-stewardship">负责任的 AI 资源管理</h2>
+    <p class="sec-lead">
+      AI 使用规模化之后，使用需求与可用资源之间的平衡是必须正面应对的课题。
+      我的做法是把资源管理当作一项持续的治理工作，而不是一次性的技术选择。
+    </p>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3><span class="no">01</span>识别约束</h3>
+        <p>关注使用规模、使用强度与可用资源之间的平衡，
+           在问题影响团队使用体验之前，主动识别并暴露瓶颈。</p>
+      </div>
+      <div class="card">
+        <h3><span class="no">02</span>合理组织</h3>
+        <ul>
+          <li>统一组织与管理可用资源，兼顾不同使用强度的成员</li>
+          <li>按任务性质选择合适的工具与模型，把资源优先投入关键任务</li>
+          <li>与团队约定使用规范，减少不必要的消耗</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3><span class="no">03</span>守住边界</h3>
+        <p>资源安排不以牺牲任务质量与必要验证为代价；
+           先验证效果、再扩大使用范围，让 AI 在团队中可持续地用下去。</p>
+      </div>
+    </div>
+    <p class="note">本页不呈现资源规模与供给安排相关信息；以上为一般性治理原则的定性描述。</p>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 08 能力总览 -->
+  <section id="skills" aria-labelledby="h-skills">
+    <p class="sec-kicker">08 · Capabilities</p>
+    <h2 id="h-skills">能力总览</h2>
+    <div class="skills">
+      <span class="chip">测试策略与体系建设</span>
+      <span class="chip">自动化框架与流水线工程</span>
+      <span class="chip">持续集成 / 持续测试</span>
+      <span class="chip">图像与音频测试技术</span>
+      <span class="chip">设备控制与资源调度</span>
+      <span class="chip">AI 用例生成与版本门禁</span>
+      <span class="chip">缺陷分析自动化（SOP + 智能体）</span>
+      <span class="chip">质量度量与漏测治理</span>
+      <span class="chip">AI 资源治理</span>
+      <span class="chip">跨团队协作与共享能力建设</span>
+      <span class="chip">团队管理与专项培训</span>
+      <span class="chip">专利与软件著作权沉淀</span>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- 09 脱敏说明 -->
+  <section id="notice" aria-labelledby="h-notice">
+    <p class="sec-kicker">09 · Notice</p>
+    <h2 id="h-notice">脱敏说明</h2>
+    <div class="notice-box">
+      <h3>本页面为公开脱敏版本</h3>
+      <ul>
+        <li>本页面由内部完整版工作总结删节整理而成，仅保留个人职业背景、方法论与定性化的成果描述。</li>
+        <li>已移除或泛化的内容包括：现任企业与组织部门名称、项目与产品代号、客户与业务相关数据、
+            规模与运营细节、资源与供给安排、内部资料来源与链接，以及内部流程细节。</li>
+        <li>页面不呈现业务数字与量化指标；经历与成果均为定性描述，
+            不代表任何组织的承诺或结论。</li>
+        <li>完整细节不对外提供；如需了解或核实，请通过适当渠道与本人联系。</li>
+        <li>本页面为纯静态内容：不引用外部资源、不嵌入脚本依赖、不收集任何访问数据。</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <span>蔡伟 · 个人简介（公开脱敏版）</span>
+    <span>质量工程 / 测试自动化 / AI 质量实践</span>
+    <span>更新于 2026-09</span>
+  </div>
+</footer>
+</body>
+</html>
