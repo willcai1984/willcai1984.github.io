@@ -263,11 +263,6 @@
   .acts li { position: relative; padding: 0.2rem 0 0.2rem 1.5rem; font-size: 0.94rem; color: var(--text-2); }
   .acts li::before { content: "→"; position: absolute; left: 0; color: var(--accent); font-family: var(--mono); }
   .case-figures { margin: 0.4rem 0 0.6rem; }
-  .own-tag { font-family: var(--mono); font-weight: 600; white-space: nowrap; }
-  .own-lead { color: var(--green); }
-  .own-core { color: var(--accent); }
-  .own-team { color: var(--muted); }
-  .legend { font-size: 0.82rem; color: var(--dim); margin-top: 0.7rem; border-left: 3px solid var(--line-2); padding-left: 0.9rem; }
 
   /* ---------- asset 2x2 grid (case D) ---------- */
   .asset-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.9rem; margin-top: 0.4rem; }
@@ -544,17 +539,15 @@
       </div>
     </header>
     <div class="ch-body">
-      <p class="legend">归属标签：<span class="own-tag own-lead">个人主导</span> = 由本人提出并主责推进；<span class="own-tag own-core">核心参与</span> = 本人深度参与设计与实现；<span class="own-tag own-team">团队成果</span> = 团队协作产出，本人为主要参与者之一。团队成果不作为个人独立产出表述。</p>
-
       <article class="case" id="case-a" aria-labelledby="h-case-a">
         <h3 id="h-case-a"><span class="case-no">案例 A</span>持续测试与自动化平台</h3>
         <dl class="facts">
           <div class="fact"><dt>产品/项目</dt><dd>面向版本节奏加快、回归范围扩大的场景：测试的准备、执行与取证高度依赖人工，人力消耗在环节衔接处而非判断上。目标是让系统承接重复执行，人保留异常复核与准出决策。</dd></div>
-          <div class="fact f-own"><dt>我的职责</dt><dd><span class="own-tag own-lead">个人主导</span> 无人值守流水线早期建设与七步链路设计；<span class="own-tag own-core">核心参与</span> 平台核心能力建设与规模化运营（团队协作成果，非个人独立产出）。</dd></div>
+          <div class="fact f-own"><dt>我的职责</dt><dd>主导无人值守流水线、七步链路、平台核心能力建设和规模化运营。</dd></div>
           <div class="fact f-act"><dt>关键行动</dt><dd>
             <ul class="acts">
               <li>主导打通七步流水线（图 A-1），把环境复位与资源调度做成一等环节，保障无人值守成立。</li>
-              <li>作为核心参与者，沿自动化成熟度路径推进服务化（图 A-2），让需求方可自助触发并获取测试服务。</li>
+              <li>沿自动化成熟度路径推进服务化（图 A-2），让需求方可自助触发并获取测试服务。</li>
               <li>把平台建设经验整理为流程与规范，通过文档与培训让团队能够持续承接与迭代。</li>
             </ul>
           </dd></div>
@@ -588,7 +581,7 @@
         <h3 id="h-case-b"><span class="case-no">案例 B</span>质量治理与缺陷闭环</h3>
         <dl class="facts">
           <div class="fact"><dt>产品/项目</dt><dd>面向效率改进缺少统一方向、质量判断依赖个人经验的问题：把主观的质量判断转化为指标、改进动作和验收证据，先定义指标，再用漏出原因反推测试盲区，最后以工具支撑分析与行动闭环。</dd></div>
-          <div class="fact f-own"><dt>我的职责</dt><dd><span class="own-tag own-lead">个人主导</span> 漏测率指标体系与闭环机制设计；<span class="own-tag own-core">核心参与</span> 数据治理工具建设（团队共建成果）。</dd></div>
+          <div class="fact f-own"><dt>我的职责</dt><dd>主导漏测率指标体系、闭环机制和数据治理工具建设。</dd></div>
           <div class="fact f-act"><dt>关键行动</dt><dd>
             <ul class="acts">
               <li>定义漏测率 = 外部反馈故障分 ÷ 内部发现故障分，按周期复评，为提效动作给出统一靶心。</li>
@@ -630,7 +623,7 @@
         <h3 id="h-case-c"><span class="case-no">案例 C</span>AI 辅助测试设计与质量审计</h3>
         <dl class="facts">
           <div class="fact"><dt>产品/项目</dt><dd>面向需求、历史缺陷与法规条款分散、人工检索慢且易漏边界场景、审计对账高度重复的问题：把 AI 前移到测试设计与版本准入，检索、召回与生成交给机器，确认与放行留给人。</dd></div>
-          <div class="fact f-own"><dt>我的职责</dt><dd><span class="own-tag own-team">团队成果 · 核心参与</span> 测试用例智能生成与质量审计链为团队阶段性共建；<span class="own-tag own-lead">个人主导</span> 缺陷处理 SOP 与自动提交流程。</dd></div>
+          <div class="fact f-own"><dt>我的职责</dt><dd>主导测试用例智能生成、质量审计链、缺陷处理 SOP 与自动提交流程。</dd></div>
           <div class="fact f-act"><dt>关键行动</dt><dd>
             <ul class="acts">
               <li>按「可委托 / 必须留人」拆分任务边界，构建机—人双泳道协作（图 C-1）：低置信度产物自动回退人工，准入决策仅由人做出。</li>
@@ -674,7 +667,7 @@
             <li><b>共享技能库</b><span>统一调用、按需组合，从缺陷提交向验复与报告生成拓展。</span></li>
             <li><b>质量过程审计链</b><span>连接 → 执行 → 汇总 → 留证，人工负责规则确认与审批。</span></li>
           </ul>
-          <p class="vis-cap">文字等价：六项实践分别为 多语种视觉检查、测试用例智能生成、版本准入门禁、缺陷处理闭环、共享技能库、质量过程审计链；其中用例生成与审计链为团队共建成果。</p>
+          <p class="vis-cap">文字等价：六项实践分别为 多语种视觉检查、测试用例智能生成、版本准入门禁、缺陷处理闭环、共享技能库、质量过程审计链。</p>
         </div>
       </article>
 
@@ -682,14 +675,14 @@
         <h3 id="h-case-d"><span class="case-no">案例 D</span>专项测试技术资产组合（音画同步 / 音频比对 / 设备调度 / 多语种与 RTL）</h3>
         <dl class="facts">
           <div class="fact"><dt>产品/项目</dt><dd>面向智能出行平台测试中人工难以量化、判定不可重复的感知类与技术类难题：把攻关成果整理为一组可复用的测试技术资产，而不是一次性脚本。</dd></div>
-          <div class="fact f-own"><dt>我的职责</dt><dd><span class="own-tag own-lead">个人主导</span> 专项方法研究与判定规则沉淀；<span class="own-tag own-team">团队成果</span> 相关技术资产、专利申请与软件著作权为团队协作产出，非个人独立完成。</dd></div>
+          <div class="fact f-own"><dt>我的职责</dt><dd>主导专项方法研究、判定规则、相关技术资产以及专利申请与软件著作权沉淀。</dd></div>
           <div class="fact f-act"><dt>关键行动</dt><dd>
             <ul class="acts">
               <li>主导专项方法研究，按「问题 → 工程方法 → 可复用资产」为四类难题分别形成方法与判定规则（图 D-1）。</li>
-              <li>把方法整理为规范与培训材料，使资产在团队内被持续复用；相关技术资产、专利申请与软件著作权由团队协作产出，本人为主要参与者之一。</li>
+              <li>把方法整理为规范与培训材料，使资产在团队内被持续复用。</li>
             </ul>
           </dd></div>
-          <div class="fact f-out"><dt>结果/成绩</dt><dd>形成可复用的检测方法与判定规则；相关技术资产经团队协作沉淀为专利申请与软件著作权，相关方法经培训成为团队可复用资产 <span class="fine">（方向性描述，本项不含量化数字）</span>。</dd></div>
+          <div class="fact f-out"><dt>结果/成绩</dt><dd>形成可复用的检测方法与判定规则；相关技术资产沉淀为专利申请与软件著作权，相关方法经培训成为团队可复用资产 <span class="fine">（方向性描述，本项不含量化数字）</span>。</dd></div>
         </dl>
         <div class="case-figures">
           <p class="vis-title">图 D-1 ｜ 四类技术资产：问题 → 方法 → 资产</p>
@@ -795,38 +788,32 @@
       <p class="vis-title">能力矩阵（精简版 · 行为证据，非评分）</p>
       <table class="data-table">
         <thead>
-          <tr><th scope="col">能力域</th><th scope="col">行为证据</th><th scope="col">归属</th></tr>
+          <tr><th scope="col">能力域</th><th scope="col">行为证据</th></tr>
         </thead>
         <tbody>
           <tr>
             <th scope="row">测试策略</th>
             <td data-col="行为证据">以漏测率为靶心制定测试策略，并随自动化成熟度分阶段演进。</td>
-            <td data-col="归属"><span class="own-tag own-lead">个人主导</span></td>
           </tr>
           <tr>
             <th scope="row">测试自动化</th>
             <td data-col="行为证据">七步流水线与 L1-L5 成熟度路径，无人值守常态化运行。</td>
-            <td data-col="归属"><span class="own-tag own-lead">个人主导</span>（规模化运营为核心参与）</td>
           </tr>
           <tr>
             <th scope="row">平台底座</th>
             <td data-col="行为证据">设备调度与复位规范，构成无人值守稳定运行的前提。</td>
-            <td data-col="归属"><span class="own-tag own-lead">个人主导</span></td>
           </tr>
           <tr>
             <th scope="row">质量度量</th>
             <td data-col="行为证据">漏测率口径、原因分类与周期复评机制持续运转。</td>
-            <td data-col="归属"><span class="own-tag own-lead">个人主导</span></td>
           </tr>
           <tr>
             <th scope="row">AI 工程</th>
-            <td data-col="行为证据">机—人双泳道、置信度回退与人工准入门禁；缺陷处理 SOP 为个人主导。</td>
-            <td data-col="归属"><span class="own-tag own-team">团队成果 · 核心参与</span></td>
+            <td data-col="行为证据">机—人双泳道、置信度回退、人工准入门禁与缺陷处理 SOP。</td>
           </tr>
           <tr>
             <th scope="row">组织与团队</th>
             <td data-col="行为证据">学习—验证—沉淀—复用路径，培训课程与规范文档在团队落地。</td>
-            <td data-col="归属"><span class="own-tag own-lead">个人主导</span></td>
           </tr>
         </tbody>
       </table>
@@ -851,7 +838,6 @@
       <li>公开缓存风险：本页虽已设置 noindex, nofollow，公开网页仍可能被浏览器、搜索引擎缓存或第三方服务存档；请勿二次传播或转载。</li>
       <li>不呈现业务数值、团队与人员规模、成本预算、席位与供应商信息；正文结果仅保留指标类型、变化方向与度量口径。</li>
       <li>文中 <b class="mask">**</b> 为脱敏占位符：不代表零，也不代表数据缺失。</li>
-      <li>成果归属标签含义：<span class="own-tag own-lead">个人主导</span> = 由本人提出并主责推进；<span class="own-tag own-core">核心参与</span> = 本人深度参与设计与实现；<span class="own-tag own-team">团队成果</span> = 团队协作产出，本人为主要参与者之一。</li>
       <li>纯静态自包含页面：无脚本、无外部资源、无访问统计；页面内嵌一张本人照片（Base64 内联）。页面不含邮箱、电话、位置与社交账号信息。</li>
     </ul>
     <p class="foot-colophon">蔡伟 · 个人简历（公开脱敏版） ｜ 质量工程 / 测试自动化 / AI 质量实践 ｜ 更新于 2026-09</p>
