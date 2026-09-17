@@ -139,6 +139,15 @@
   .trio-card h3 { margin-top: 0.45rem; font-size: 1.05rem; font-weight: 700; }
   .trio-card p { margin-top: 0.4rem; color: var(--muted); font-size: 0.92rem; line-height: 1.75; }
 
+  /* ---------- overview stats ---------- */
+  .stats { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 0.9rem; }
+  .stat-card { border: 1px solid var(--line); border-radius: 10px; padding: 1rem 1.1rem; background: rgba(255, 255, 255, 0.02); }
+  .stat-num { font-family: var(--mono); font-size: 1.45rem; font-weight: 700; color: var(--accent); letter-spacing: 0.02em; }
+  .stat-label { margin-top: 0.35rem; font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+  .workstyle { margin-top: 1.2rem; font-size: 0.95rem; line-height: 1.9; color: var(--text-2); }
+  .workstyle b { color: var(--text); font-weight: 600; }
+  .case-span { display: block; margin-top: 0.2rem; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.15em; color: var(--dim); font-weight: 400; }
+
   /* ---------- sanitized strip ---------- */
   .sanitized-strip {
     margin-top: 1.3rem;
@@ -370,7 +379,7 @@
     .hero-portrait img { max-width: 8rem; border: 1px solid #bbbbbb; }
     .stamp { transform: none; }
     .ch-no { color: #dddddd; -webkit-text-stroke: 0; }
-    .trio-card, .flow, .swimlane, .fact, .asset-cell, .ai-six li, .timeline li, .gov-card, .sanitized-strip { break-inside: avoid; }
+    .trio-card, .stat-card, .flow, .swimlane, .fact, .asset-cell, .ai-six li, .timeline li, .gov-card, .sanitized-strip { break-inside: avoid; }
     .data-table tr { break-inside: avoid; }
     h2, h3, h4 { break-after: avoid; }
     @page { margin: 16mm 14mm; }
@@ -428,29 +437,31 @@
         <span class="ch-note">SEC. 01 · PROFILE</span>
       </div>
       <div class="ch-titling">
-        <p class="ch-kicker">个人画像 · PROFILE</p>
-        <h2 id="h-about">个人画像</h2>
-        <p class="ch-lead">跨行业经历沉淀出的三种工作方式。</p>
+        <p class="ch-kicker">概览 · OVERVIEW</p>
+        <h2 id="h-about">概览</h2>
+        <p class="ch-lead">跨电信、网络设备、互联网与智能汽车四个领域，聚焦平台测试与工程效能。</p>
       </div>
     </header>
     <div class="ch-body">
-      <ul class="trio">
-        <li class="trio-card">
-          <p class="trio-tag">A · ENGINEERING × BUSINESS</p>
-          <h3>工程与业务并重</h3>
-          <p>兼顾工程细节与业务目标，让技术方案形成可度量的交付结果。</p>
+      <ul class="stats">
+        <li class="stat-card">
+          <p class="stat-num">17 年</p>
+          <p class="stat-label">质量工程经验 · 跨电信、网络设备、互联网与智能汽车</p>
         </li>
-        <li class="trio-card">
-          <p class="trio-tag">B · EXPERIENCE → CAPABILITY</p>
-          <h3>经验到能力的转化</h3>
-          <p>快速进入新领域，并将验证结果沉淀为团队可复用的工具、规范与培训。</p>
+        <li class="stat-card">
+          <p class="stat-num">48 条车型线</p>
+          <p class="stat-label">现任平台测试范围 · 6 个平台 / 10 个品牌</p>
         </li>
-        <li class="trio-card">
-          <p class="trio-tag">C · EMBRACE CHANGE</p>
-          <h3>拥抱变化</h3>
-          <p>在变化中兼顾学习速度、质量底线与交付效率。</p>
+        <li class="stat-card">
+          <p class="stat-num">7×24</p>
+          <p class="stat-label">无人值守持续测试常态运转</p>
+        </li>
+        <li class="stat-card">
+          <p class="stat-num">2 · 3 · 1</p>
+          <p class="stat-label">专利申请 / 软件著作权 / 基准测试工具</p>
         </li>
       </ul>
+      <p class="workstyle">三种工作方式：<b>工程与业务并重</b>——让技术方案形成可度量的交付结果；<b>经验到能力转化</b>——把验证结果沉淀为团队可复用的工具与规范；<b>拥抱变化</b>——在变化中兼顾学习速度、质量底线与交付效率。</p>
       <div class="sanitized-strip">
         <p class="stamp">已脱敏 · 公开版<small>SANITIZED COPY</small></p>
         <p>公开脱敏版：组织、项目代号和业务数值已移除或泛化；<b class="mask">**</b> 表示脱敏数值。详见<a href="#notice">脱敏说明</a>。</p>
@@ -525,23 +536,23 @@
       <div class="ch-titling">
         <p class="ch-kicker">项目与成果 · PROJECTS &amp; RESULTS</p>
         <h2 id="h-projects">项目与成果</h2>
-        <p class="ch-lead">4 个案例，聚焦职责、行动与结果。</p>
+        <p class="ch-lead">持续测试平台、质量治理、AI 质量工程与专项技术资产，四类代表性项目。</p>
       </div>
     </header>
     <div class="ch-body">
       <article class="case" id="case-a" aria-labelledby="h-case-a">
-        <h3 id="h-case-a"><span class="case-no">案例 A</span>持续测试与自动化平台</h3>
+        <h3 id="h-case-a"><span class="case-no">案例 A</span>持续测试与自动化平台<span class="case-span">2022 — 至今</span></h3>
         <dl class="facts">
-          <div class="fact"><dt>背景与目标</dt><dd>版本加快、回归扩大，准备、执行和取证依赖人工。目标是自动完成重复执行，由人负责异常复核和准出。</dd></div>
-          <div class="fact f-own"><dt>我的职责</dt><dd>负责无人值守流水线、平台核心能力与规模化运营。</dd></div>
+          <div class="fact"><dt>背景与目标</dt><dd>面向版本节奏加快、回归范围扩大的场景：测试的准备、执行与取证高度依赖人工，人力消耗在环节衔接而非判断上。目标是让系统承接重复执行，人保留异常复核与准出决策。</dd></div>
+          <div class="fact f-own"><dt>我的职责</dt><dd>负责无人值守流水线的早期建设与七步链路设计，以及平台核心能力与规模化运营。</dd></div>
           <div class="fact f-act"><dt>关键行动</dt><dd>
             <ul class="acts">
-              <li>将环境复位和资源调度纳入流水线，支撑无人值守。</li>
-              <li>按成熟度路径推进平台服务化，支持需求方自助触发。</li>
-              <li>以流程、规范和培训支持团队持续运营。</li>
+              <li>主导打通七步流水线，把环境复位与资源调度做成一等环节，使无人值守执行成立。</li>
+              <li>沿成熟度路径推进服务化：以语义化自助触发替代人工接续，以配置化编排让测试方可按场景调整组合。</li>
+              <li>将平台经验整理为流程、规范与培训，支撑团队承接与持续运营。</li>
             </ul>
           </dd></div>
-          <div class="fact f-out"><dt>结果/成绩</dt><dd>流水线 7×24 常态运转，平台累计执行用例 <b class="mask">**</b> 次；单版本回归投入降至 <b class="mask">**</b> 人时，无人值守场景扩展至 <b class="mask">**</b> 项，取证材料自动归集。 <span class="fine">口径：平台累计快照（2024.07—2026.08）；平均单版本人工投入；纳入流水线且可免人工盯守完成的场景数。</span></dd></div>
+          <div class="fact f-out"><dt>结果/成绩</dt><dd>平台累计执行用例 <b class="mask">**</b> 次；单版本回归投入降至 <b class="mask">**</b> 人时，无人值守场景扩展至 <b class="mask">**</b> 项，取证材料自动归集。 <span class="fine">口径：平台累计快照（2024.07—2026.08）；平均单版本人工投入；纳入流水线且可免人工盯守完成的场景数。</span></dd></div>
         </dl>
         <div class="case-figures">
           <p class="vis-title">七步持续测试流水线</p>
@@ -568,14 +579,15 @@
       </article>
 
       <article class="case" id="case-b" aria-labelledby="h-case-b">
-        <h3 id="h-case-b"><span class="case-no">案例 B</span>质量治理与缺陷闭环</h3>
+        <h3 id="h-case-b"><span class="case-no">案例 B</span>质量治理与缺陷闭环<span class="case-span">2021 起</span></h3>
         <dl class="facts">
-          <div class="fact"><dt>背景与目标</dt><dd>质量判断依赖经验，效率改进缺少统一方向。目标是用指标、原因分析和复评形成治理闭环。</dd></div>
-          <div class="fact f-own"><dt>我的职责</dt><dd>负责漏测率指标、治理闭环与数据工具建设。</dd></div>
+          <div class="fact"><dt>背景与目标</dt><dd>质量判断依赖个人经验，效率改进缺少统一靶心；漏出原因分散在各类反馈中，难以反推测试盲区。目标是把主观判断转化为指标、改进动作与验收证据。</dd></div>
+          <div class="fact f-own"><dt>我的职责</dt><dd>负责漏测率指标体系、治理闭环与数据工具建设。</dd></div>
           <div class="fact f-act"><dt>关键行动</dt><dd>
             <ul class="acts">
-              <li>统一漏测率口径，按周期复评。</li>
-              <li>用工作流自动同步和结构化数据，支持结论复用与行动跟踪。</li>
+              <li>统一漏测率口径并按周期复评，为提效动作给出统一靶心。</li>
+              <li>建立「指标 → 漏出分类 → 根因 → 改进 → 复评」治理闭环，为每类漏出原因配套对应改进动作。</li>
+              <li>引入工作流自动同步与结构化数据治理，解决数据反复拉取、结论难复用、行动难跟踪的问题。</li>
             </ul>
           </dd></div>
           <div class="fact f-out"><dt>结果/成绩</dt><dd>所负责范围的漏测率分阶段下降 <b class="mask">**%</b>，分析与改进行动持续闭环。 <span class="fine">口径：外部反馈故障分 ÷ 内部发现故障分，按周期复评。</span></dd></div>
@@ -607,13 +619,16 @@
       </article>
 
       <article class="case" id="case-c" aria-labelledby="h-case-c">
-        <h3 id="h-case-c"><span class="case-no">案例 C</span>AI 辅助测试设计与质量审计</h3>
+        <h3 id="h-case-c"><span class="case-no">案例 C</span>AI 辅助测试设计与质量审计<span class="case-span">2025 起</span></h3>
         <dl class="facts">
-          <div class="fact"><dt>背景与目标</dt><dd>需求、缺陷和法规信息分散，人工检索易漏场景，审计对账重复。由 AI 完成检索、召回和生成，由人确认边界并决定准入。</dd></div>
+          <div class="fact"><dt>背景与目标</dt><dd>需求、历史缺陷与法规条款分散，人工检索慢且易漏边界场景，版本准入对账高度重复。把 AI 前移到测试设计与版本准入——检索、召回与生成交给机器，确认与放行留给人。</dd></div>
           <div class="fact f-own"><dt>我的职责</dt><dd>负责用例生成、质量审计、缺陷处理 SOP 与辅助提交流程。</dd></div>
           <div class="fact f-act"><dt>关键行动</dt><dd>
             <ul class="acts">
-              <li>将缺陷识别、判定、提交和跟进沉淀为 SOP，并实现自动分析与辅助提交。</li>
+              <li>按「可委托 / 必须留人」拆分任务边界，构建机—人双泳道：低置信度产物自动回退人工，准入决策仅由人做出。</li>
+              <li>在真实业务问题中落地六项 AI 实践，从多语种视觉检查扩展到用例生成、版本门禁与质量过程审计。</li>
+              <li>将缺陷处理经验沉淀为覆盖识别、判定、提交与跟进的 SOP，并在其上实现自动分析与辅助提交。</li>
+              <li>从首个缺陷提交技能起步，发起共享技能库，带动团队共建、跨项目复用与反馈迭代。</li>
             </ul>
           </dd></div>
           <div class="fact f-out"><dt>结果/成绩</dt><dd>用例设计与审计准备耗时下降 <b class="mask">**%</b>；AI 累计生成候选用例 <b class="mask">**</b> 条，准入材料可自动预生成，经人工确认后使用。 <span class="fine">口径：AI 召回生成加人工确认，对比纯人工流程；候选用例经人工确认后入库。</span></dd></div>
@@ -648,23 +663,24 @@
             <li><b>用例生成</b><span>结合需求、历史缺陷和法规生成用例，人工确认边界。</span></li>
             <li><b>门禁</b><span>对齐提交与版本说明，预生成风险材料和测试建议。</span></li>
             <li><b>缺陷闭环</b><span>以 SOP 串联识别、判定、提交和跟进。</span></li>
-            <li><b>共享技能库</b><span>由个人发起，团队共建、跨项目复用并持续迭代。</span></li>
+            <li><b>共享技能库</b><span>统一调用与按需组合，扩展至验复和报告生成。</span></li>
             <li><b>审计链</b><span>串联执行、汇总与留证，规则和审批由人负责。</span></li>
           </ul>
         </div>
       </article>
 
       <article class="case" id="case-d" aria-labelledby="h-case-d">
-        <h3 id="h-case-d"><span class="case-no">案例 D</span>专项测试技术资产组合</h3>
+        <h3 id="h-case-d"><span class="case-no">案例 D</span>专项测试技术资产组合<span class="case-span">2023 集中沉淀</span></h3>
         <dl class="facts">
-          <div class="fact"><dt>背景与目标</dt><dd>将难以量化、难以重复判定的测试问题转化为可复用的方法和规则。</dd></div>
-          <div class="fact f-own"><dt>我的职责</dt><dd>负责专项方法、判定规则及知识产权沉淀。</dd></div>
+          <div class="fact"><dt>背景与目标</dt><dd>面向智能座舱测试中人工难以量化、判定不可重复的感知类与技术类难题：把攻关成果整理为一组可复用的测试技术资产，而不是一次性脚本。</dd></div>
+          <div class="fact f-own"><dt>我的职责</dt><dd>负责专项方法研究、判定规则与知识产权沉淀。</dd></div>
           <div class="fact f-act"><dt>关键行动</dt><dd>
             <ul class="acts">
-              <li>将四类专项方法整理为团队规范，配套培训推动复用。</li>
+              <li>按「问题 → 工程方法 → 可复用资产」路径，主导音画同步、音频比对、设备控制与多语种四类专项攻关。</li>
+              <li>将方法整理为规范与培训材料，配套专项培训，使资产在团队内持续复用。</li>
             </ul>
           </dd></div>
-          <div class="fact f-out"><dt>结果/成绩</dt><dd>形成可复用的检测方法与判定规则，沉淀专利申请 2 项、软件著作权 3 项与基准测试工具 1 项。</dd></div>
+          <div class="fact f-out"><dt>结果/成绩</dt><dd>形成可复用的检测方法与判定规则，沉淀为专利申请、软件著作权与基准测试工具。</dd></div>
         </dl>
         <div class="case-figures">
           <p class="vis-title">四类技术资产</p>
